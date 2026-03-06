@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Alcaraz · Fan Hub 🎾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    :root {
+      --bg:#080c18;--bg2:#0f1526;--card:rgba(255,255,255,0.04);--card-h:rgba(255,255,255,0.08);
+      --red:#e63946;--gold:#f4a261;--blue:#a8dadc;--green:#52b788;
+      --txt:#f1faee;--txt2:#8d99ae;--border:rgba(255,255,255,0.08);--r:14px;--r-sm:8px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:999;height:60px;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 1.5rem;background:rgba(8,12,24,.95);backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:.5rem}
+    .nav-logo em{color:var(--red);font-style:normal}
+    .nav-links{display:flex;gap:1.25rem;list-style:none}
+    .nav-links a{color:var(--txt2);text-decoration:none;font-size:.82rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--txt)}
+    .badge-rank{background:linear-gradient(135deg,var(--red),#a4001c);color:#fff;padding:.2rem .7rem;border-radius:20px;font-family:'Rajdhani',sans-serif;font-size:.85rem;font-weight:700}
+    @media(max-width:700px){.nav-links{display:none}}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:80px 1.5rem 2rem;background:radial-gradient(ellipse at 50% 40%,rgba(230,57,70,.12) 0%,transparent 65%),linear-gradient(160deg,#080c18 0%,#1a0a0e 50%,#080c18 100%)}
+    .hero-flag{font-size:3.5rem;margin-bottom:.75rem}
+    .hero-title{font-family:'Rajdhani',sans-serif;font-size:clamp(3rem,9vw,8rem);font-weight:700;line-height:.85;background:linear-gradient(135deg,#fff 30%,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-sub{font-family:'Rajdhani',sans-serif;font-size:1.3rem;color:var(--red);font-weight:600;letter-spacing:4px;text-transform:uppercase;margin:1rem 0 2rem}
+    .hero-stats{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap}
+    .hs{text-align:center}.hs-v{font-family:'Rajdhani',sans-serif;font-size:2.5rem;font-weight:700;color:var(--gold);line-height:1}
+    .hs-l{font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:1px}
+    .section-wrap{max-width:1300px;margin:0 auto;padding:4rem 1.5rem}
+    .alt-bg{background:var(--bg2)}
+    .sec-title{font-family:'Rajdhani',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:1.75rem;display:flex;align-items:center;gap:.75rem}
+    .sec-title::before{content:'';width:4px;height:1.8rem;background:var(--red);border-radius:2px;flex-shrink:0}
+    .sec-title i{color:var(--gold)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;transition:all .25s}
+    .card:hover{background:var(--card-h);transform:translateY(-2px)}
+    .match-hero{background:linear-gradient(135deg,rgba(230,57,70,.12),rgba(8,12,24,.9));border:1px solid rgba(230,57,70,.3);border-radius:var(--r);padding:2.5rem;text-align:center;margin-bottom:2rem}
+    .match-tourn{font-size:.8rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:.4rem}
+    .match-round{font-family:'Rajdhani',sans-serif;font-size:1.5rem;color:var(--txt2);margin-bottom:1.5rem}
+    .match-players{display:flex;align-items:center;justify-content:center;gap:2rem;margin-bottom:1.75rem;flex-wrap:wrap}
+    .player{text-align:center}
+    .player-av{width:76px;height:76px;border-radius:50%;margin:0 auto .5rem;display:flex;align-items:center;justify-content:center;font-size:2.2rem;border:3px solid}
+    .av-alc{background:linear-gradient(135deg,var(--red),#a4001c);border-color:var(--red)}
+    .av-rival{background:linear-gradient(135deg,#1d3557,#457b9d);border-color:#457b9d}
+    .p-name{font-family:'Rajdhani',sans-serif;font-size:1.1rem;font-weight:700}
+    .p-rank{font-size:.78rem;color:var(--txt2)}
+    .vs{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:700;color:var(--gold)}
+    .countdown{display:flex;gap:1rem;justify-content:center;margin:1.5rem 0;flex-wrap:wrap}
+    .cd-unit{text-align:center;background:rgba(0,0,0,.35);border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1.4rem;min-width:74px}
+    .cd-val{font-family:'Rajdhani',sans-serif;font-size:2.5rem;font-weight:700;color:var(--red);line-height:1;display:block}
+    .cd-lbl{font-size:.65rem;color:var(--txt2);text-transform:uppercase;letter-spacing:1px}
+    .match-meta{font-size:.9rem;color:var(--txt2);margin-bottom:.75rem}
+    .surf-badge{display:inline-block;padding:.2rem .65rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+    .surf-hard{background:rgba(69,123,157,.25);color:var(--blue);border:1px solid rgba(69,123,157,.4)}
+    .surf-clay{background:rgba(244,162,97,.25);color:#f4a261;border:1px solid rgba(244,162,97,.4)}
+    .surf-grass{background:rgba(82,183,136,.25);color:#95d5b2;border:1px solid rgba(82,183,136,.4)}
+    .live-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(230,57,70,.15);border:1px solid var(--red);color:var(--red);padding:.25rem .75rem;border-radius:20px;font-size:.75rem;font-weight:600}
+    .live-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:blink 1s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    .ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:1rem}
+    .ch-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r-sm);padding:1.1rem;text-align:center;transition:all .25s}
+    .ch-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+    .ch-icon{font-size:2rem;margin-bottom:.4rem}.ch-name{font-weight:600;font-size:.88rem}
+    .ch-desc{font-size:.72rem;color:var(--txt2);margin-top:.3rem;line-height:1.5}
+    .tourn-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+    @media(max-width:800px){.tourn-grid{grid-template-columns:1fr}}
+    #map{height:340px;border-radius:var(--r);border:1px solid var(--border)}
+    .info-row{display:flex;justify-content:space-between;align-items:center;padding:.65rem 0;border-bottom:1px solid var(--border)}
+    .info-row:last-child{border-bottom:none}
+    .info-lbl{font-size:.72rem;color:var(--txt2);text-transform:uppercase;letter-spacing:1px}
+    .info-val{font-weight:600;font-size:.9rem}
+    .mt{width:100%;border-collapse:collapse;font-size:.82rem}
+    .mt th{text-align:left;padding:.65rem .9rem;color:var(--txt2);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--border)}
+    .mt td{padding:.65rem .9rem;border-bottom:1px solid rgba(255,255,255,.04)}
+    .mt tr:hover td{background:rgba(255,255,255,.03)}
+    .res-w{color:var(--green);font-weight:700;background:rgba(82,183,136,.1);padding:.15rem .4rem;border-radius:4px}
+    .res-l{color:var(--red);font-weight:700;background:rgba(230,57,70,.1);padding:.15rem .4rem;border-radius:4px}
+    .form-dots{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.75rem}
+    .fd{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;cursor:default;transition:transform .15s}
+    .fd:hover{transform:scale(1.2)}
+    .fd.w{background:rgba(82,183,136,.15);border:2px solid var(--green);color:var(--green)}
+    .fd.l{background:rgba(230,57,70,.15);border:2px solid var(--red);color:var(--red)}
+    .surf-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    @media(max-width:800px){.surf-cards{grid-template-columns:1fr}}
+    .surf-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;text-align:center}
+    .surf-title{font-family:'Rajdhani',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:.75rem}
+    .surf-pct{font-family:'Rajdhani',sans-serif;font-size:2.2rem;font-weight:700;color:var(--gold);margin:.5rem 0 .2rem}
+    .surf-mini{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin-top:.75rem}
+    .sm-item{background:rgba(0,0,0,.25);border-radius:6px;padding:.4rem .25rem}
+    .sm-v{font-family:'Rajdhani',sans-serif;font-size:1.5rem;font-weight:700}
+    .sm-l{font-size:.65rem;color:var(--txt2)}
+    .h2h-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:1rem}
+    .h2h-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;text-align:center;transition:all .25s}
+    .h2h-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+    .h2h-flag{font-size:2rem;margin-bottom:.3rem}.h2h-name{font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700}
+    .h2h-rank{font-size:.72rem;color:var(--txt2);margin-bottom:.6rem}
+    .h2h-rec{font-family:'Rajdhani',sans-serif;font-size:2rem;font-weight:700;margin:.4rem 0}
+    .h2h-bar{height:5px;background:var(--border);border-radius:3px;overflow:hidden;margin:.5rem 0}
+    .h2h-fill{height:100%;background:linear-gradient(90deg,var(--green),#95d5b2);border-radius:3px;transition:width 1.2s ease}
+    .career-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem;margin-bottom:2rem}
+    .cs-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;text-align:center}
+    .cs-val{font-family:'Rajdhani',sans-serif;font-size:2.4rem;font-weight:700;color:var(--gold)}
+    .cs-lbl{font-size:.7rem;color:var(--txt2);text-transform:uppercase;letter-spacing:1px;margin-top:.2rem}
+    .chart-box{position:relative;height:280px}
+    .slam-t{width:100%;border-collapse:collapse;font-size:.83rem}
+    .slam-t th{text-align:center;padding:.6rem;background:rgba(0,0,0,.3);color:var(--txt2);font-size:.7rem;text-transform:uppercase;letter-spacing:1px}
+    .slam-t td{text-align:center;padding:.55rem .6rem;border-bottom:1px solid var(--border)}
+    .slam-t td:first-child{text-align:left;font-weight:600}
+    .s-w{background:rgba(82,183,136,.2);color:var(--green);font-weight:700;border-radius:4px;padding:.1rem .35rem}
+    .s-f{background:rgba(230,57,70,.2);color:var(--red);border-radius:4px;padding:.1rem .35rem}
+    .s-sf{background:rgba(244,162,97,.2);color:var(--gold);border-radius:4px;padding:.1rem .35rem}
+    .s-qf{background:rgba(168,218,220,.15);color:var(--blue);border-radius:4px;padding:.1rem .35rem}
+    .s-r{color:var(--txt2)}
+    footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--txt2);font-size:.82rem}
+    footer a{color:var(--gold);text-decoration:none}
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+    @media(max-width:800px){.g2{grid-template-columns:1fr}}
+    .mb2{margin-bottom:1rem}.mb4{margin-bottom:2rem}
+    .sub-title{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:600;margin-bottom:1rem;color:var(--txt2)}
+    /* Loading */
+    .loading-text{color:var(--txt2);font-style:italic;font-size:.85rem}
+    .pulse{animation:pulse-anim 1.5s ease-in-out infinite}
+    @keyframes pulse-anim{0%,100%{opacity:.4}50%{opacity:1}}
+    .live-banner{background:rgba(82,183,136,.1);border:1px solid rgba(82,183,136,.3);border-radius:var(--r-sm);padding:.5rem 1rem;margin-bottom:1rem;font-size:.8rem;color:var(--green);text-align:center}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">🎾 <em>ALCARAZ</em> FAN HUB</div>
+  <ul class="nav-links">
+    <li><a href="#proximo">Próximo Partido</a></li>
+    <li><a href="#torneo">Torneo</a></li>
+    <li><a href="#forma">Últimos Partidos</a></li>
+    <li><a href="#superficie">Superficie</a></li>
+    <li><a href="#h2h">H2H</a></li>
+    <li><a href="#carrera">Carrera</a></li>
+    <li><a href="#ver">Dónde Ver</a></li>
+  </ul>
+  <div class="badge-rank" id="nav-rank">🌍 Cargando...</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <div class="hero-flag">🇪🇸</div>
+    <h1 class="hero-title">CARLOS<br>ALCARAZ</h1>
+    <div class="hero-sub">El Murciano · La Bestia del Tenis</div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="hs"><div class="hs-v pulse" id="hero-rank">--</div><div class="hs-l">Ranking ATP</div></div>
+      <div class="hs"><div class="hs-v" id="hero-age">22</div><div class="hs-l">Años</div></div>
+      <div class="hs"><div class="hs-v" id="hero-height">183</div><div class="hs-l">cm Altura</div></div>
+      <div class="hs"><div class="hs-v" id="hero-plays">Diestro</div><div class="hs-l">Mano</div></div>
+      <div class="hs"><div class="hs-v" id="hero-wins">--</div><div class="hs-l">Victorias 2026</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PRÓXIMO PARTIDO -->
+<div id="proximo">
+<div class="section-wrap">
+  <div class="live-banner" id="live-banner">🔴 Datos en tiempo real desde SofaScore — se actualizan automáticamente cada 15 minutos</div>
+  <h2 class="sec-title"><i class="fas fa-hourglass-half"></i> Próximo Partido</h2>
+
+  <div class="match-hero" id="next-match-card">
+    <div class="match-tourn" id="nm-tournament"><span class="pulse">Cargando próximo partido...</span></div>
+    <div class="match-round" id="nm-round"></div>
+    <div class="match-players" id="nm-players"></div>
+    <div class="match-meta" id="nm-meta"></div>
+    <div class="countdown">
+      <div class="cd-unit"><span class="cd-val" id="cd-d">--</span><div class="cd-lbl">Días</div></div>
+      <div class="cd-unit"><span class="cd-val" id="cd-h">--</span><div class="cd-lbl">Horas</div></div>
+      <div class="cd-unit"><span class="cd-val" id="cd-m">--</span><div class="cd-lbl">Min</div></div>
+      <div class="cd-unit"><span class="cd-val" id="cd-s">--</span><div class="cd-lbl">Seg</div></div>
+    </div>
+    <span class="live-badge"><span class="live-dot"></span><span id="match-status">Cargando...</span></span>
+  </div>
+
+  <!-- TV channels (static) -->
+  <h3 class="sub-title"><i class="fas fa-tv" style="color:var(--gold)"></i> Dónde Ver Este Partido</h3>
+  <div class="ch-grid" style="margin-bottom:0">
+    <div class="ch-card"><div class="ch-icon">📺</div><div class="ch-name">Movistar+ Tennis</div><div class="ch-desc">Canal 52 · Suscripción<br><span style="color:var(--green)">✓ Repetición disponible</span></div></div>
+    <div class="ch-card"><div class="ch-icon">🔵</div><div class="ch-name">Eurosport 2</div><div class="ch-desc">TDT/Cable/Satélite<br><span style="color:var(--green)">✓ En directo</span></div></div>
+    <div class="ch-card"><div class="ch-icon">📱</div><div class="ch-name">Discovery+</div><div class="ch-desc">App / Web · Streaming<br><span style="color:var(--green)">✓ Replay HD disponible</span></div></div>
+    <div class="ch-card"><div class="ch-icon">🎾</div><div class="ch-name">Tennis TV (ATP)</div><div class="ch-desc">App oficial ATP<br><span style="color:var(--green)">✓ En diferido completo</span></div></div>
+    <div class="ch-card"><div class="ch-icon">▶️</div><div class="ch-name">YouTube ATP</div><div class="ch-desc">youtube.com/ATPTour<br><span style="color:var(--gold)">◐ Highlights gratuitos</span></div></div>
+    <div class="ch-card"><div class="ch-icon">🔴</div><div class="ch-name">DAZN</div><div class="ch-desc">Streaming online<br><span style="color:var(--txt2)">Consultar programación</span></div></div>
+  </div>
+</div>
+</div>
+
+<!-- TORNEO ACTUAL + MAPA -->
+<div class="alt-bg" id="torneo">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-trophy"></i> Torneo Actual</h2>
+  <div class="tourn-grid">
+    <div>
+      <div class="card mb2" style="margin-bottom:1rem" id="tournament-info">
+        <h3 style="font-family:Rajdhani;font-size:1.3rem;color:var(--gold);margin-bottom:1rem" id="tourn-name"><span class="pulse">Cargando torneo...</span></h3>
+        <div id="tourn-details"></div>
+      </div>
+      <div class="card" id="tournament-results">
+        <h3 style="font-family:Rajdhani;font-size:1.15rem;margin-bottom:1rem">📊 Últimos resultados del torneo</h3>
+        <div id="tourn-matches-body"><span class="loading-text pulse">Cargando partidos...</span></div>
+      </div>
+    </div>
+    <div>
+      <div id="map" style="margin-bottom:1rem"></div>
+      <div class="card" id="tourn-about">
+        <p style="font-size:.84rem;color:var(--txt2);line-height:1.65" id="tourn-desc">Cargando información del torneo...</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- FORMA RECIENTE -->
+<div id="forma">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-chart-line"></i> Últimos Partidos</h2>
+  <div class="card mb4" style="margin-bottom:2rem">
+    <h3 class="sub-title" style="margin-bottom:.75rem">Forma — Últimos Partidos</h3>
+    <div class="form-dots" id="form-dots"><span class="loading-text pulse">Cargando resultados...</span></div>
+    <div style="font-size:.75rem;color:var(--txt2)">
+      <span style="color:var(--green)">● V</span> = Victoria &nbsp;
+      <span style="color:var(--red)">● D</span> = Derrota
+    </div>
+  </div>
+  <div class="g2">
+    <div class="card">
+      <h3 class="sub-title">Historial Reciente</h3>
+      <table class="mt" id="recent-tbl">
+        <thead><tr><th>Torneo</th><th>Ronda</th><th>Rival</th><th>Sets</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h3 class="sub-title">Victorias por Superficie (recientes)</h3>
+      <div class="chart-box"><canvas id="winsChart"></canvas></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SUPERFICIE (calculada desde partidos recientes) -->
+<div class="alt-bg" id="superficie">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-layer-group"></i> Estadísticas por Superficie</h2>
+  <div class="surf-cards" id="surface-cards">
+    <div class="surf-card" style="border-color:rgba(244,162,97,.3)">
+      <div class="surf-title" style="color:#f4a261">🔴 Tierra Batida</div>
+      <div style="height:160px;position:relative"><canvas id="clayChart"></canvas></div>
+      <div class="surf-pct" id="clay-pct">--</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div class="surf-mini" id="clay-stats"></div>
+    </div>
+    <div class="surf-card" style="border-color:rgba(168,218,220,.3)">
+      <div class="surf-title" style="color:var(--blue)">🔵 Pista Dura</div>
+      <div style="height:160px;position:relative"><canvas id="hardChart"></canvas></div>
+      <div class="surf-pct" id="hard-pct">--</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div class="surf-mini" id="hard-stats"></div>
+    </div>
+    <div class="surf-card" style="border-color:rgba(82,183,136,.3)">
+      <div class="surf-title" style="color:#95d5b2">🟢 Hierba</div>
+      <div style="height:160px;position:relative"><canvas id="grassChart"></canvas></div>
+      <div class="surf-pct" id="grass-pct">--</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div class="surf-mini" id="grass-stats"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- H2H (calculado desde partidos) -->
+<div id="h2h">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-users"></i> Rivales Recientes</h2>
+  <p style="color:var(--txt2);font-size:.84rem;margin-bottom:1.5rem">Rivales de los últimos partidos de Alcaraz.</p>
+  <div class="h2h-grid" id="h2h-grid"><span class="loading-text pulse">Cargando rivales...</span></div>
+</div>
+</div>
+
+<!-- CARRERA (datos del perfil) -->
+<div class="alt-bg" id="carrera">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-star"></i> Perfil del Jugador</h2>
+  <div class="career-grid" id="player-grid"><span class="loading-text pulse">Cargando perfil...</span></div>
+</div>
+</div>
+
+<!-- DÓNDE VER (estático) -->
+<div id="ver">
+<div class="section-wrap">
+  <h2 class="sec-title"><i class="fas fa-satellite-dish"></i> Dónde Ver a Alcaraz</h2>
+  <p style="color:var(--txt2);font-size:.84rem;margin-bottom:1.5rem">Canales y plataformas donde puedes seguir a Alcaraz en España.</p>
+  <div class="ch-grid">
+    <div class="ch-card" style="border-color:rgba(0,130,201,.4)"><div class="ch-icon">📺</div><div class="ch-name" style="color:#4ab3f4">Movistar+ Tennis</div><div class="ch-desc">Canal 52<br>Masters 1000, Grand Slams<br><span style="color:var(--green)">✓ Repeticiones 24h</span></div></div>
+    <div class="ch-card" style="border-color:rgba(255,103,0,.4)"><div class="ch-icon">🔵</div><div class="ch-name" style="color:#ff6700">Eurosport 2</div><div class="ch-desc">TDT / Cable / Satélite<br>ATP 250, 500, Masters<br><span style="color:var(--green)">✓ Directo y diferido</span></div></div>
+    <div class="ch-card" style="border-color:rgba(0,200,150,.4)"><div class="ch-icon">📱</div><div class="ch-name" style="color:#00c896">Discovery+</div><div class="ch-desc">App / Web · Streaming<br><span style="color:var(--green)">✓ Replay HD disponible</span></div></div>
+    <div class="ch-card" style="border-color:rgba(244,162,97,.4)"><div class="ch-icon">🎾</div><div class="ch-name" style="color:var(--gold)">Tennis TV (ATP)</div><div class="ch-desc">App oficial ATP<br><span style="color:var(--green)">✓ En diferido completo</span></div></div>
+    <div class="ch-card" style="border-color:rgba(255,0,0,.3)"><div class="ch-icon">▶️</div><div class="ch-name" style="color:#ff4444">YouTube ATP</div><div class="ch-desc">youtube.com/ATPTour<br><span style="color:var(--gold)">◐ Highlights gratuitos</span></div></div>
+    <div class="ch-card" style="border-color:rgba(230,57,70,.3)"><div class="ch-icon">🔴</div><div class="ch-name" style="color:var(--red)">DAZN</div><div class="ch-desc">Streaming online<br><span style="color:var(--txt2)">Consultar programación</span></div></div>
+    <div class="ch-card" style="border-color:rgba(82,183,136,.3)"><div class="ch-icon">📡</div><div class="ch-name" style="color:var(--green)">TVE La 1</div><div class="ch-desc">TV gratuita<br>Finales de Grand Slams<br><span style="color:var(--green)">✓ Gratis (finales)</span></div></div>
+    <div class="ch-card" style="border-color:rgba(168,218,220,.3)"><div class="ch-icon">💻</div><div class="ch-name" style="color:var(--blue)">Amazon Prime</div><div class="ch-desc">Prime Video<br><span style="color:var(--txt2)">Según acuerdos</span></div></div>
+  </div>
+  <div class="card" style="margin-top:2rem">
+    <h3 class="sub-title"><i class="fas fa-rotate-left" style="color:var(--gold)"></i> ¿Puedo verlo después?</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:.75rem">
+      <div style="padding:.75rem;background:rgba(0,0,0,.2);border-radius:var(--r-sm)"><div style="font-weight:600;margin-bottom:.3rem">📺 Movistar+ App</div><div style="font-size:.8rem;color:var(--txt2)">Repetición disponible desde que termina el partido.</div></div>
+      <div style="padding:.75rem;background:rgba(0,0,0,.2);border-radius:var(--r-sm)"><div style="font-weight:600;margin-bottom:.3rem">📱 Discovery+</div><div style="font-size:.8rem;color:var(--txt2)">Replay disponible 2-4 horas después del partido.</div></div>
+      <div style="padding:.75rem;background:rgba(0,0,0,.2);border-radius:var(--r-sm)"><div style="font-weight:600;margin-bottom:.3rem">🎾 Tennis TV</div><div style="font-size:.8rem;color:var(--txt2)">Partidos completos en diferido. Archivo completo ATP.</div></div>
+      <div style="padding:.75rem;background:rgba(0,0,0,.2);border-radius:var(--r-sm)"><div style="font-weight:600;margin-bottom:.3rem">▶️ YouTube ATP</div><div style="font-size:.8rem;color:var(--txt2)">Solo highlights 10-15 min. Gratuito.</div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <p style="margin-bottom:.5rem">Hecho con ❤️ para un gran aficionado al tenis</p>
+  <p>Datos en tiempo real: <a href="https://www.sofascore.com" target="_blank">SofaScore</a> · Última actualización: <span id="last-update">--</span></p>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   CARLOS ALCARAZ FAN HUB — DATOS EN TIEMPO REAL
+   Fuente: SofaScore API (via backend proxy)
+═══════════════════════════════════════════ */
+
+const ALCARAZ_ID = 275923;
+let countdownTarget = null;
+let countdownInterval = null;
+let mapInstance = null;
+let mapMarker = null;
+
+// ── Helpers ──
+function flag(alpha2) {
+  if (!alpha2) return '🎾';
+  return alpha2.toUpperCase().replace(/./g, c => String.fromCodePoint(127397 + c.charCodeAt()));
+}
+
+function formatDate(ts) {
+  const d = new Date(ts * 1000);
+  return d.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+}
+
+function formatTime(ts) {
+  const d = new Date(ts * 1000);
+  return d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+}
+
+function roundName(info) {
+  if (!info) return '';
+  const raw = info.name || '';
+  // Translate English round names to Spanish
+  const translations = {
+    'Final': 'Final', 'Semifinals': 'Semifinales', 'Quarterfinals': 'Cuartos',
+    'Round of 16': 'Octavos', 'Round of 32': '3ª Ronda', 'Round of 64': '2ª Ronda',
+    'Round of 128': '1ª Ronda', '1st round': '1ª Ronda', '2nd round': '2ª Ronda',
+    '3rd round': '3ª Ronda', '4th round': '4ª Ronda', 'Qualification': 'Clasificación',
+  };
+  if (translations[raw]) return translations[raw];
+  if (raw) return raw;
+  const map = { 1: '1ª Ronda', 2: '2ª Ronda', 3: '3ª Ronda', 4: '4ª Ronda', 5: 'QF', 6: 'SF', 7: 'Final' };
+  return map[info.round] || `Ronda ${info.round}`;
+}
+
+function surfaceType(groundType) {
+  // SofaScore groundType values
+  if (!groundType) return { name: 'Desconocida', cls: 'surf-hard' };
+  const t = groundType.toLowerCase();
+  if (t.includes('clay') || t.includes('tierra')) return { name: 'Tierra Batida', cls: 'surf-clay', key: 'clay' };
+  if (t.includes('grass') || t.includes('hierba')) return { name: 'Hierba', cls: 'surf-grass', key: 'grass' };
+  return { name: 'Pista Dura', cls: 'surf-hard', key: 'hard' };
+}
+
+function isAlcarazHome(event) {
+  return event.homeTeam && event.homeTeam.id === ALCARAZ_ID;
+}
+
+function getOpponent(event) {
+  return isAlcarazHome(event) ? event.awayTeam : event.homeTeam;
+}
+
+function getAlcarazScore(event) {
+  return isAlcarazHome(event) ? event.homeScore : event.awayScore;
+}
+
+function getOpponentScore(event) {
+  return isAlcarazHome(event) ? event.awayScore : event.homeScore;
+}
+
+function didAlcarazWin(event) {
+  if (!event.winnerCode) return null;
+  if (isAlcarazHome(event)) return event.winnerCode === 1;
+  return event.winnerCode === 2;
+}
+
+function formatScore(event) {
+  const as = getAlcarazScore(event);
+  const os = getOpponentScore(event);
+  if (!as || !os) return '';
+  const sets = [];
+  for (let i = 1; i <= 5; i++) {
+    const a = as[`period${i}`];
+    const o = os[`period${i}`];
+    if (a !== undefined && o !== undefined && (a > 0 || o > 0)) {
+      let s = `${a}-${o}`;
+      const tb = as[`period${i}TieBreak`] ?? event[`period${i}TieBreak`];
+      if (tb !== undefined && tb !== null) s += `(${tb})`;
+      sets.push(s);
+    }
+  }
+  return sets.join(', ');
+}
+
+// ── API Fetch ──
+async function api(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`API error ${res.status}`);
+  return res.json();
+}
+
+// ── LOAD PLAYER PROFILE ──
+async function loadPlayer() {
+  try {
+    const data = await api('/api/player');
+    const team = data.team || data;
+    const info = team.playerTeamInfo || {};
+
+    const ranking = team.ranking || '--';
+    document.getElementById('nav-rank').textContent = `🌍 Nº ${ranking} ATP`;
+    document.getElementById('hero-rank').textContent = `#${ranking}`;
+    document.getElementById('hero-rank').classList.remove('pulse');
+
+    if (info.birthDateTimestamp) {
+      const age = Math.floor((Date.now() / 1000 - info.birthDateTimestamp) / (365.25 * 86400));
+      document.getElementById('hero-age').textContent = age;
+    }
+    if (info.height) document.getElementById('hero-height').textContent = info.height < 3 ? Math.round(info.height * 100) : info.height;
+    document.getElementById('hero-plays').textContent = info.plays ? (info.plays.toLowerCase().includes('right') ? 'Diestro' : 'Zurdo') : 'Diestro';
+
+    // Player profile grid
+    const grid = document.getElementById('player-grid');
+    grid.innerHTML = '';
+    const stats = [
+      { v: `#${ranking}`, l: 'Ranking ATP' },
+      { v: info.height ? `${info.height} cm` : '--', l: 'Altura' },
+      { v: info.weight ? `${info.weight} kg` : '--', l: 'Peso' },
+      { v: info.plays ? (info.plays.toLowerCase().includes('right') ? 'Diestro' : 'Zurdo') : '--', l: 'Mano' },
+      { v: team.country ? team.country.name : 'España', l: 'País' },
+    ];
+    stats.forEach(s => {
+      grid.innerHTML += `<div class="cs-card"><div class="cs-val">${s.v}</div><div class="cs-lbl">${s.l}</div></div>`;
+    });
+  } catch (e) {
+    console.error('Error loading player:', e);
+    document.getElementById('nav-rank').textContent = '🌍 Nº -- ATP';
+  }
+}
+
+// ── LOAD NEXT MATCH ──
+async function loadNextMatch() {
+  try {
+    const data = await api('/api/next-matches');
+    const events = data.events || [];
+    if (events.length === 0) {
+      document.getElementById('nm-tournament').textContent = 'No hay partidos programados próximamente';
+      document.getElementById('match-status').textContent = 'Sin partidos';
+      return;
+    }
+
+    const event = events[0]; // Next upcoming event
+    const opponent = getOpponent(event);
+    const tourn = event.tournament;
+    const uniqueTourn = tourn?.uniqueTournament;
+    const surface = surfaceType(uniqueTourn?.groundType || event.groundType || '');
+
+    // Tournament name
+    document.getElementById('nm-tournament').textContent =
+      `🏆 ${uniqueTourn?.name || tourn?.name || 'Torneo ATP'}`;
+
+    // Round
+    document.getElementById('nm-round').textContent = roundName(event.roundInfo);
+
+    // Players
+    const opFlag = flag(opponent?.country?.alpha2);
+    document.getElementById('nm-players').innerHTML = `
+      <div class="player">
+        <div class="player-av av-alc">🇪🇸</div>
+        <div class="p-name">C. Alcaraz</div>
+        <div class="p-rank">ATP #${document.getElementById('hero-rank')?.textContent?.replace('#','') || '--'}</div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="player">
+        <div class="player-av av-rival">${opFlag}</div>
+        <div class="p-name">${opponent?.name || 'TBD'}</div>
+        <div class="p-rank">${opponent?.ranking ? `ATP #${opponent.ranking}` : ''}</div>
+      </div>`;
+
+    // Date/time/surface
+    document.getElementById('nm-meta').innerHTML = `
+      <i class="fas fa-calendar"></i> ${formatDate(event.startTimestamp)} &nbsp;|&nbsp;
+      <i class="fas fa-clock"></i> ${formatTime(event.startTimestamp)} &nbsp;|&nbsp;
+      <span class="surf-badge ${surface.cls}">${surface.name}</span>`;
+
+    // Countdown
+    countdownTarget = event.startTimestamp * 1000;
+    if (countdownInterval) clearInterval(countdownInterval);
+    updateCountdown();
+    countdownInterval = setInterval(updateCountdown, 1000);
+
+    // Status
+    const statusType = event.status?.type;
+    if (statusType === 'inprogress') {
+      document.getElementById('match-status').textContent = '¡EN JUEGO AHORA!';
+    } else if (statusType === 'finished') {
+      document.getElementById('match-status').textContent = 'Partido terminado';
+    } else {
+      document.getElementById('match-status').textContent = 'Partido próximo';
+    }
+
+    // Load tournament info
+    loadTournament(event);
+
+  } catch (e) {
+    console.error('Error loading next match:', e);
+    document.getElementById('nm-tournament').textContent = 'Error cargando próximo partido';
+  }
+}
+
+// ── LOAD TOURNAMENT INFO ──
+function loadTournament(event) {
+  const tourn = event.tournament;
+  const uTourn = tourn?.uniqueTournament;
+  const surface = surfaceType(uTourn?.groundType || '');
+
+  document.getElementById('tourn-name').textContent = uTourn?.name || tourn?.name || 'Torneo ATP';
+
+  const category = tourn?.category?.name || 'ATP';
+  document.getElementById('tourn-details').innerHTML = `
+    <div class="info-row"><span class="info-lbl">📍 Categoría</span><span class="info-val">${category}</span></div>
+    <div class="info-row"><span class="info-lbl">🎾 Superficie</span><span class="info-val"><span class="surf-badge ${surface.cls}">${surface.name}</span></span></div>
+    <div class="info-row"><span class="info-lbl">📅 Fecha partido</span><span class="info-val">${formatDate(event.startTimestamp)}</span></div>
+    <div class="info-row"><span class="info-lbl">🕐 Hora</span><span class="info-val">${formatTime(event.startTimestamp)} (hora local)</span></div>
+  `;
+
+  document.getElementById('tourn-desc').innerHTML = `
+    Torneo <strong style="color:var(--txt)">${uTourn?.name || tourn?.name}</strong> del circuito
+    <strong style="color:var(--gold)">${category}</strong>.
+    Superficie: <strong>${surface.name}</strong>.
+  `;
+
+  // Update map to tournament location
+  if (!mapInstance) initMap();
+  const tournName = (uTourn?.name || tourn?.name || '').toLowerCase();
+  const COORDS = {
+    'australian open': [-37.8215, 144.9784], 'roland garros': [48.8469, 2.2485],
+    'french open': [48.8469, 2.2485], 'wimbledon': [51.4340, -0.2143],
+    'us open': [40.7498, -73.8458], 'indian wells': [33.7238, -116.3052],
+    'miami open': [25.7089, -80.1641], 'miami': [25.7089, -80.1641],
+    'madrid open': [40.3725, -3.6870], 'mutua madrid open': [40.3725, -3.6870],
+    'madrid': [40.3725, -3.6870], 'rome': [41.9283, 12.4615], 'roma': [41.9283, 12.4615],
+    'internazionali bnl': [41.9283, 12.4615], 'monte carlo': [43.7514, 7.4416],
+    'monte-carlo': [43.7514, 7.4416], 'barcelona': [41.3934, 2.1134],
+    'barcelona open': [41.3934, 2.1134], 'shanghai': [31.0413, 121.3499],
+    'beijing': [39.9820, 116.4200], 'china open': [39.9820, 116.4200],
+    'cincinnati': [39.0998, -84.5117], 'western & southern': [39.0998, -84.5117],
+    'toronto': [43.7700, -79.1900], 'montreal': [45.5317, -73.5826],
+    'canadian open': [45.5317, -73.5826], 'halle': [52.0609, 8.3440],
+    'queen': [51.4889, -0.2141], 'queens': [51.4889, -0.2141],
+    'tokyo': [35.6655, 139.7170], 'japan open': [35.6655, 139.7170],
+    'basel': [47.5633, 7.6174], 'vienna': [48.2106, 16.3550],
+    'paris': [48.8393, 2.3788], 'atp finals': [45.0579, 7.6598],
+    'turin': [45.0579, 7.6598], 'dubai': [25.2514, 55.3101],
+    'doha': [25.2605, 51.6138], 'acapulco': [16.8531, -99.8237],
+    'buenos aires': [-34.5818, -58.4356], 'rio de janeiro': [-22.9829, -43.2249],
+    'rio open': [-22.9829, -43.2249], 'brisbane': [-27.4469, 153.0354],
+    'beijing': [39.9820, 116.4200], 'six kings slam': [24.7136, 46.6753],
+  };
+  let coords = null;
+  for (const [key, val] of Object.entries(COORDS)) {
+    if (tournName.includes(key)) { coords = val; break; }
+  }
+  if (coords) {
+    mapInstance.flyTo(coords, 8, { duration: 1.5 });
+    mapMarker.setLatLng(coords);
+    mapMarker.setPopupContent(`<b>🎾 ${uTourn?.name || tourn?.name}</b><br>${surface.name}`);
+    mapMarker.openPopup();
+  }
+}
+
+// ── LOAD RECENT MATCHES ──
+async function loadRecentMatches() {
+  try {
+    const data = await api('/api/recent-matches');
+    const events = (data.events || []).slice(0, 20); // Last 20
+
+    // Form dots
+    const fdEl = document.getElementById('form-dots');
+    fdEl.innerHTML = '';
+    const formEvents = events.slice(0, 15);
+    formEvents.forEach(ev => {
+      const won = didAlcarazWin(ev);
+      if (won === null) return;
+      const d = document.createElement('div');
+      d.className = `fd ${won ? 'w' : 'l'}`;
+      d.textContent = won ? 'V' : 'D';
+      const op = getOpponent(ev);
+      d.title = `${ev.tournament?.uniqueTournament?.name || ev.tournament?.name} ${roundName(ev.roundInfo)} vs ${op?.name} (${formatScore(ev)})`;
+      fdEl.appendChild(d);
+    });
+
+    // Recent matches table
+    const tbody = document.querySelector('#recent-tbl tbody');
+    tbody.innerHTML = '';
+    events.slice(0, 12).forEach(ev => {
+      const won = didAlcarazWin(ev);
+      const op = getOpponent(ev);
+      const opFlag = flag(op?.country?.alpha2);
+      const score = formatScore(ev);
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${ev.tournament?.uniqueTournament?.name || ev.tournament?.name || '--'}</td>
+        <td>${roundName(ev.roundInfo)}</td>
+        <td>${opFlag} ${op?.name || 'TBD'}</td>
+        <td style="font-size:.77rem;color:var(--txt2)">${score}</td>
+        <td>${won !== null ? `<span class="res-${won ? 'w' : 'l'}">${won ? 'V' : 'D'}</span>` : '--'}</td>`;
+      tbody.appendChild(tr);
+    });
+
+    // Tournament results in the torneo section
+    loadTournamentMatches(events);
+
+    // Surface stats
+    computeSurfaceStats(events);
+
+    // Rivals / opponents
+    computeRivals(events);
+
+    // Wins chart
+    buildWinsChart(events);
+
+    // Update wins count in hero
+    const wins2026 = events.filter(ev => {
+      const d = new Date(ev.startTimestamp * 1000);
+      return d.getFullYear() === new Date().getFullYear() && didAlcarazWin(ev);
+    }).length;
+    document.getElementById('hero-wins').textContent = wins2026;
+
+    document.getElementById('last-update').textContent = new Date().toLocaleString('es-ES');
+
+  } catch (e) {
+    console.error('Error loading recent matches:', e);
+    document.getElementById('form-dots').innerHTML = '<span class="loading-text">Error cargando partidos</span>';
+  }
+}
+
+// ── Tournament recent matches display ──
+function loadTournamentMatches(events) {
+  // Find matches from the most recent tournament
+  if (events.length === 0) return;
+  const latestTournId = events[0].tournament?.uniqueTournament?.id || events[0].tournament?.id;
+  const tournMatches = events.filter(ev =>
+    (ev.tournament?.uniqueTournament?.id || ev.tournament?.id) === latestTournId
+  );
+
+  const container = document.getElementById('tourn-matches-body');
+  if (tournMatches.length === 0) {
+    container.innerHTML = '<span class="loading-text">No hay partidos recientes del torneo</span>';
+    return;
+  }
+
+  let html = '<table class="mt"><thead><tr><th>Ronda</th><th>Rival</th><th>Resultado</th></tr></thead><tbody>';
+  tournMatches.reverse().forEach(ev => {
+    const op = getOpponent(ev);
+    const won = didAlcarazWin(ev);
+    const opFlag = flag(op?.country?.alpha2);
+    html += `<tr>
+      <td>${roundName(ev.roundInfo)}</td>
+      <td>${opFlag} ${op?.name || 'TBD'}</td>
+      <td>${won !== null ? `<span class="res-${won ? 'w' : 'l'}">${won ? 'V' : 'D'}</span> ${formatScore(ev)}` : '--'}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
+// ── Surface stats from match history ──
+function computeSurfaceStats(events) {
+  const stats = { clay: { w: 0, l: 0 }, hard: { w: 0, l: 0 }, grass: { w: 0, l: 0 } };
+
+  events.forEach(ev => {
+    const won = didAlcarazWin(ev);
+    if (won === null) return;
+    const gt = ev.tournament?.uniqueTournament?.groundType || ev.groundType || '';
+    const surf = surfaceType(gt);
+    const key = surf.key || 'hard';
+    if (stats[key]) {
+      if (won) stats[key].w++; else stats[key].l++;
+    }
+  });
+
+  // Render surface cards
+  const configs = [
+    { key: 'clay', pctId: 'clay-pct', statsId: 'clay-stats', chartId: 'clayChart', color: '#f4a261' },
+    { key: 'hard', pctId: 'hard-pct', statsId: 'hard-stats', chartId: 'hardChart', color: '#a8dadc' },
+    { key: 'grass', pctId: 'grass-pct', statsId: 'grass-stats', chartId: 'grassChart', color: '#95d5b2' },
+  ];
+
+  configs.forEach(cfg => {
+    const s = stats[cfg.key];
+    const total = s.w + s.l;
+    const pct = total > 0 ? Math.round(s.w / total * 100) : 0;
+
+    document.getElementById(cfg.pctId).textContent = total > 0 ? `${pct}%` : '--';
+    document.getElementById(cfg.statsId).innerHTML = `
+      <div class="sm-item"><div class="sm-v" style="color:var(--green)">${s.w}</div><div class="sm-l">Victorias</div></div>
+      <div class="sm-item"><div class="sm-v" style="color:var(--red)">${s.l}</div><div class="sm-l">Derrotas</div></div>
+    `;
+
+    // Chart
+    mkDonut(cfg.chartId, s.w, Math.max(s.l, 0.1), cfg.color);
+  });
+}
+
+// ── Rivals from recent matches ──
+function computeRivals(events) {
+  const rivalsMap = {};
+  events.forEach(ev => {
+    const won = didAlcarazWin(ev);
+    if (won === null) return;
+    const op = getOpponent(ev);
+    if (!op) return;
+    const key = op.id || op.name;
+    if (!rivalsMap[key]) {
+      rivalsMap[key] = { name: op.name, flag: flag(op.country?.alpha2), ranking: op.ranking, w: 0, l: 0 };
+    }
+    if (won) rivalsMap[key].w++; else rivalsMap[key].l++;
+  });
+
+  // Sort by total matches
+  const rivals = Object.values(rivalsMap).sort((a, b) => (b.w + b.l) - (a.w + a.l)).slice(0, 8);
+
+  const grid = document.getElementById('h2h-grid');
+  grid.innerHTML = '';
+  rivals.forEach(r => {
+    const total = r.w + r.l;
+    const pct = Math.round(r.w / total * 100);
+    const div = document.createElement('div');
+    div.className = 'h2h-card';
+    div.innerHTML = `
+      <div class="h2h-flag">${r.flag}</div>
+      <div class="h2h-name">${r.name}</div>
+      <div class="h2h-rank">${r.ranking ? `#${r.ranking} ATP` : ''}</div>
+      <div class="h2h-rec">
+        <span style="color:var(--green)">${r.w}</span>
+        <span style="color:var(--txt2);font-size:1rem"> – </span>
+        <span style="color:var(--red)">${r.l}</span>
+      </div>
+      <div style="font-size:.72rem;color:var(--txt2)">${total} partido${total > 1 ? 's' : ''}</div>
+      <div class="h2h-bar"><div class="h2h-fill" style="width:0%" data-pct="${pct}"></div></div>`;
+    grid.appendChild(div);
+  });
+  setTimeout(() => {
+    document.querySelectorAll('.h2h-fill').forEach(el => { el.style.width = el.dataset.pct + '%'; });
+  }, 200);
+}
+
+// ── Wins chart by surface ──
+function buildWinsChart(events) {
+  const surfCounts = { 'Tierra': 0, 'Dura': 0, 'Hierba': 0 };
+  events.forEach(ev => {
+    if (!didAlcarazWin(ev)) return;
+    const gt = ev.tournament?.uniqueTournament?.groundType || '';
+    const s = surfaceType(gt);
+    if (s.key === 'clay') surfCounts['Tierra']++;
+    else if (s.key === 'grass') surfCounts['Hierba']++;
+    else surfCounts['Dura']++;
+  });
+
+  const ctx = document.getElementById('winsChart');
+  if (ctx._chart) ctx._chart.destroy();
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: Object.keys(surfCounts),
+      datasets: [{
+        label: 'Victorias',
+        data: Object.values(surfCounts),
+        backgroundColor: ['rgba(244,162,97,.7)', 'rgba(168,218,220,.7)', 'rgba(82,183,136,.7)'],
+        borderColor: ['#f4a261', '#a8dadc', '#95d5b2'],
+        borderWidth: 2, borderRadius: 6,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+  ctx._chart = chart;
+}
+
+// ── COUNTDOWN ──
+function updateCountdown() {
+  if (!countdownTarget) return;
+  const diff = countdownTarget - Date.now();
+  if (diff <= 0) {
+    document.getElementById('cd-d').textContent = '00';
+    document.getElementById('cd-h').textContent = '00';
+    document.getElementById('cd-m').textContent = '00';
+    document.getElementById('cd-s').textContent = '00';
+    document.getElementById('match-status').textContent = '¡EN JUEGO o FINALIZADO!';
+    return;
+  }
+  const pad = n => String(n).padStart(2, '0');
+  document.getElementById('cd-d').textContent = pad(Math.floor(diff / 86400000));
+  document.getElementById('cd-h').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+  document.getElementById('cd-m').textContent = pad(Math.floor((diff % 3600000) / 60000));
+  document.getElementById('cd-s').textContent = pad(Math.floor((diff % 60000) / 1000));
+}
+
+// ── MAP ──
+function initMap() {
+  mapInstance = L.map('map').setView([40.4168, -3.7038], 5); // Default: Spain
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org">OpenStreetMap</a>'
+  }).addTo(mapInstance);
+  const icon = L.divIcon({
+    html: '<div style="background:#e63946;width:34px;height:34px;border-radius:50%;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 2px 10px rgba(0,0,0,.5)">🎾</div>',
+    className: '', iconSize: [34, 34], iconAnchor: [17, 17]
+  });
+  mapMarker = L.marker([40.4168, -3.7038], { icon }).addTo(mapInstance)
+    .bindPopup('<b>🇪🇸 Carlos Alcaraz</b><br>El Palmar, Murcia, España')
+    .openPopup();
+}
+
+// ── DONUT CHART ──
+Chart.defaults.color = '#8d99ae';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.05)';
+const chartInstances = {};
+
+function mkDonut(id, wins, losses, color) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (chartInstances[id]) chartInstances[id].destroy();
+  chartInstances[id] = new Chart(el, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [wins, losses],
+        backgroundColor: [color, 'rgba(255,255,255,0.05)'],
+        borderColor: [color, 'rgba(255,255,255,0.08)'],
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: '72%',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: c => c.dataIndex === 0 ? `Victorias: ${c.raw}` : `Derrotas: ${c.raw}` } }
+      }
+    }
+  });
+}
+
+// ── INIT ──
+async function init() {
+  console.log('🎾 Alcaraz Fan Hub — Cargando datos en tiempo real...');
+  initMap();
+
+  // Load all data (player first, then match data in parallel)
+  await loadPlayer();
+  await Promise.all([loadNextMatch(), loadRecentMatches()]);
+
+  console.log('✅ Datos cargados correctamente');
+
+  // Auto-refresh every 15 minutes
+  setInterval(async () => {
+    console.log('🔄 Refrescando datos...');
+    await Promise.all([loadPlayer(), loadNextMatch(), loadRecentMatches()]);
+  }, 15 * 60 * 1000);
+}
+
+init();
+</script>
+</body>
+</html>

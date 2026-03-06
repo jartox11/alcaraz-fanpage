@@ -1,14 +1,28 @@
+const axios = require('axios');
 const cache = require('./cache');
 
 const ALCARAZ_ID = 275923;
 const BASE = 'https://api.sofascore.com/api/v1';
-const HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-  'Accept': 'application/json',
-  'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-  'Referer': 'https://www.sofascore.com/',
-  'Origin': 'https://www.sofascore.com',
-};
+
+const client = axios.create({
+  baseURL: BASE,
+  timeout: 15000,
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://www.sofascore.com/',
+    'Origin': 'https://www.sofascore.com',
+    'Connection': 'keep-alive',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-site',
+    'Sec-Ch-Ua': '"Chromium";v="131", "Not_A Brand";v="24"',
+    'Sec-Ch-Ua-Mobile': '?0',
+    'Sec-Ch-Ua-Platform': '"Windows"',
+  },
+});
 
 // Rate limiter: max 1 request every 1.5 seconds
 let lastRequest = 0;
@@ -37,15 +51,13 @@ async function processQueue() {
   try {
     lastRequest = Date.now();
     console.log(`[SofaScore] Fetching: ${url}`);
-    const res = await fetch(url, { headers: HEADERS });
-    if (!res.ok) {
-      throw new Error(`SofaScore ${res.status}: ${res.statusText}`);
-    }
-    const data = await res.json();
-    resolve(data);
+    const res = await client.get(url);
+    resolve(res.data);
   } catch (err) {
-    console.error(`[SofaScore] Error: ${err.message}`);
-    reject(err);
+    const status = err.response?.status || 'network';
+    const msg = err.response?.statusText || err.message;
+    console.error(`[SofaScore] Error ${status}: ${msg}`);
+    reject(new Error(`SofaScore ${status}: ${msg}`));
   } finally {
     processing = false;
     if (queue.length > 0) processQueue();
@@ -85,15 +97,14 @@ const TTL = {
 
 // API functions
 async function getPlayer() {
-  return cachedFetch('player', `${BASE}/team/${ALCARAZ_ID}`, TTL.PLAYER);
+  return cachedFetch('player', `/team/${ALCARAZ_ID}`, TTL.PLAYER);
 }
 
 async function getNextMatches() {
-  // Try multiple endpoint formats - SofaScore varies
   const urls = [
-    `${BASE}/team/${ALCARAZ_ID}/events/next/0`,
-    `${BASE}/team/${ALCARAZ_ID}/events/next`,
-    `${BASE}/team/${ALCARAZ_ID}/near-events`,
+    `/team/${ALCARAZ_ID}/events/next/0`,
+    `/team/${ALCARAZ_ID}/events/next`,
+    `/team/${ALCARAZ_ID}/near-events`,
   ];
   const cached = cache.get('next-matches');
   if (cached && !cached.stale) return cached.data;
@@ -101,7 +112,6 @@ async function getNextMatches() {
   for (const url of urls) {
     try {
       const data = await rateLimitedFetch(url);
-      // near-events returns { previousEvent, nextEvent } format
       if (data.nextEvent) {
         const wrapped = { events: [data.nextEvent] };
         cache.set('next-matches', wrapped, TTL.NEXT);
@@ -120,20 +130,19 @@ async function getNextMatches() {
 }
 
 async function getRecentMatches() {
-  return cachedFetch('recent-matches', `${BASE}/team/${ALCARAZ_ID}/events/last/0`, TTL.RECENT);
+  return cachedFetch('recent-matches', `/team/${ALCARAZ_ID}/events/last/0`, TTL.RECENT);
 }
 
 async function getEvent(eventId) {
-  return cachedFetch(`event-${eventId}`, `${BASE}/event/${eventId}`, TTL.EVENT);
+  return cachedFetch(`event-${eventId}`, `/event/${eventId}`, TTL.EVENT);
 }
 
 async function getEventStats(eventId) {
-  return cachedFetch(`event-stats-${eventId}`, `${BASE}/event/${eventId}/statistics`, TTL.EVENT);
+  return cachedFetch(`event-stats-${eventId}`, `/event/${eventId}/statistics`, TTL.EVENT);
 }
 
 async function getRankings() {
-  // Type 6 = ATP Singles rankings
-  return cachedFetch('rankings', `${BASE}/rankings/type/6`, TTL.RANKINGS);
+  return cachedFetch('rankings', `/rankings/type/6`, TTL.RANKINGS);
 }
 
 module.exports = {

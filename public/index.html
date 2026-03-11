@@ -245,37 +245,38 @@
       </table>
     </div>
     <div class="card">
-      <h3 class="sub-title">Victorias por Superficie (recientes)</h3>
+      <h3 class="sub-title">Victorias por Superficie (carrera)</h3>
       <div class="chart-box"><canvas id="winsChart"></canvas></div>
     </div>
   </div>
 </div>
 </div>
 
-<!-- SUPERFICIE (calculada desde partidos recientes) -->
+<!-- SUPERFICIE (calculada desde TODA la carrera) -->
 <div class="alt-bg" id="superficie">
 <div class="section-wrap">
-  <h2 class="sec-title"><i class="fas fa-layer-group"></i> Estadísticas por Superficie</h2>
+  <h2 class="sec-title"><i class="fas fa-layer-group"></i> Estadísticas por Superficie — Carrera Completa</h2>
+  <p style="color:var(--txt2);font-size:.84rem;margin-bottom:1.5rem">Rendimiento de Alcaraz en toda su carrera profesional por tipo de superficie.</p>
   <div class="surf-cards" id="surface-cards">
     <div class="surf-card" style="border-color:rgba(244,162,97,.3)">
       <div class="surf-title" style="color:#f4a261">🔴 Tierra Batida</div>
       <div style="height:160px;position:relative"><canvas id="clayChart"></canvas></div>
       <div class="surf-pct" id="clay-pct">--</div>
-      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (carrera completa)</div>
       <div class="surf-mini" id="clay-stats"></div>
     </div>
     <div class="surf-card" style="border-color:rgba(168,218,220,.3)">
       <div class="surf-title" style="color:var(--blue)">🔵 Pista Dura</div>
       <div style="height:160px;position:relative"><canvas id="hardChart"></canvas></div>
       <div class="surf-pct" id="hard-pct">--</div>
-      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (carrera completa)</div>
       <div class="surf-mini" id="hard-stats"></div>
     </div>
     <div class="surf-card" style="border-color:rgba(82,183,136,.3)">
       <div class="surf-title" style="color:#95d5b2">🟢 Hierba</div>
       <div style="height:160px;position:relative"><canvas id="grassChart"></canvas></div>
       <div class="surf-pct" id="grass-pct">--</div>
-      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (partidos recientes)</div>
+      <div style="font-size:.75rem;color:var(--txt2);margin-bottom:.5rem">% victorias (carrera completa)</div>
       <div class="surf-mini" id="grass-stats"></div>
     </div>
   </div>
@@ -424,11 +425,53 @@ function formatScore(event) {
   return sets.join(', ');
 }
 
-// ── API Fetch ──
-async function api(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`API error ${res.status}`);
-  return res.json();
+// ── API Fetch with fallback ──
+const SOFA_BASE = 'https://api.sofascore.com/api/v1';
+const SOFA_HEADERS = {
+  'Accept': 'application/json',
+};
+
+// Map local API paths to SofaScore paths
+function sofaPath(localPath) {
+  const map = {
+    '/api/player': `/team/${ALCARAZ_ID}`,
+    '/api/next-matches': `/team/${ALCARAZ_ID}/near-events`,
+    '/api/recent-matches': `/team/${ALCARAZ_ID}/events/last/0`,
+    '/api/rankings': `/rankings/type/6`,
+    '/api/all-matches': `/team/${ALCARAZ_ID}/events/last/0`,
+  };
+  // Handle /api/event/:id and /api/event/:id/stats
+  if (localPath.startsWith('/api/event/')) {
+    return localPath.replace('/api/event/', '/event/').replace('/stats', '/statistics');
+  }
+  return map[localPath] || localPath;
+}
+
+async function api(path, opts = {}) {
+  const timeout = opts.timeout || 8000;
+  // Try backend first
+  try {
+    const res = await fetch(path, { signal: AbortSignal.timeout(timeout) });
+    if (!res.ok) throw new Error(`API error ${res.status}`);
+    const data = await res.json();
+    // Check if it's an error response from our backend
+    if (data.error) throw new Error(data.error);
+    return data;
+  } catch (e) {
+    console.log(`[Backend] ${path} failed, trying direct SofaScore...`);
+  }
+
+  // Fallback: call SofaScore directly from browser
+  const sPath = sofaPath(path);
+  const res = await fetch(`${SOFA_BASE}${sPath}`, { headers: SOFA_HEADERS });
+  if (!res.ok) throw new Error(`SofaScore ${res.status}`);
+  const data = await res.json();
+
+  // Handle near-events format for next-matches
+  if (path === '/api/next-matches' && data.nextEvent) {
+    return { events: [data.nextEvent] };
+  }
+  return data;
 }
 
 // ── LOAD PLAYER PROFILE ──
@@ -642,14 +685,8 @@ async function loadRecentMatches() {
     // Tournament results in the torneo section
     loadTournamentMatches(events);
 
-    // Surface stats
-    computeSurfaceStats(events);
-
-    // Rivals / opponents
+    // Rivals / opponents (from recent matches)
     computeRivals(events);
-
-    // Wins chart
-    buildWinsChart(events);
 
     // Update wins count in hero
     const wins2026 = events.filter(ev => {
@@ -815,6 +852,37 @@ function buildWinsChart(events) {
   ctx._chart = chart;
 }
 
+// ── CAREER STATS (all matches) ──
+async function loadCareerStats() {
+  try {
+    // Try backend endpoint first, fallback to paginating directly
+    let allEvents = [];
+    try {
+      const data = await api('/api/all-matches', { timeout: 90000 });
+      allEvents = data.events || [];
+    } catch (e) {
+      console.log('[Career] Backend all-matches failed:', e.message);
+    }
+
+    if (allEvents.length === 0) {
+      console.warn('[Career] No career matches found, using recent as fallback');
+      const recent = await api('/api/recent-matches');
+      allEvents = recent.events || [];
+    }
+
+    console.log(`[Career] Total matches for stats: ${allEvents.length}`);
+
+    // Surface stats from full career
+    computeSurfaceStats(allEvents);
+
+    // Wins chart from full career
+    buildWinsChart(allEvents);
+
+  } catch (e) {
+    console.error('Error loading career stats:', e);
+  }
+}
+
 // ── COUNTDOWN ──
 function updateCountdown() {
   if (!countdownTarget) return;
@@ -886,6 +954,9 @@ async function init() {
   // Load all data (player first, then match data in parallel)
   await loadPlayer();
   await Promise.all([loadNextMatch(), loadRecentMatches()]);
+
+  // Load career stats (surface + wins chart from ALL matches)
+  loadCareerStats();
 
   console.log('✅ Datos cargados correctamente');
 

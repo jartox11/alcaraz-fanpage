@@ -133,6 +133,41 @@ async function getRecentMatches() {
   return cachedFetch('recent-matches', `/team/${ALCARAZ_ID}/events/last/0`, TTL.RECENT);
 }
 
+async function getAllMatches() {
+  const cached = cache.get('all-matches');
+  if (cached && !cached.stale) {
+    console.log('[Cache] HIT: all-matches');
+    return cached.data;
+  }
+
+  try {
+    const allEvents = [];
+    let page = 0;
+    const maxPages = 20; // Safety limit
+
+    while (page < maxPages) {
+      console.log(`[SofaScore] Fetching career page ${page}...`);
+      const data = await rateLimitedFetch(`/team/${ALCARAZ_ID}/events/last/${page}`);
+      const events = data.events || [];
+      if (events.length === 0) break;
+      allEvents.push(...events);
+      if (!data.hasNextPage) break;
+      page++;
+    }
+
+    console.log(`[SofaScore] Total career matches fetched: ${allEvents.length}`);
+    const result = { events: allEvents, totalMatches: allEvents.length };
+    cache.set('all-matches', result, TTL.RANKINGS); // 24h cache
+    return result;
+  } catch (err) {
+    if (cached) {
+      console.log('[Cache] STALE fallback: all-matches');
+      return cached.data;
+    }
+    throw err;
+  }
+}
+
 async function getEvent(eventId) {
   return cachedFetch(`event-${eventId}`, `/event/${eventId}`, TTL.EVENT);
 }
@@ -149,6 +184,7 @@ module.exports = {
   getPlayer,
   getNextMatches,
   getRecentMatches,
+  getAllMatches,
   getEvent,
   getEventStats,
   getRankings,

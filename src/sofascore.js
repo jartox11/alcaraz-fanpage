@@ -2,27 +2,37 @@ const axios = require('axios');
 const cache = require('./cache');
 
 const ALCARAZ_ID = 275923;
-const BASE = 'https://api.sofascore.com/api/v1';
 
-const client = axios.create({
-  baseURL: BASE,
+// Try multiple base URLs - some cloud providers get blocked on one but not the other
+const BASES = [
+  'https://api.sofascore.com/api/v1',
+  'https://www.sofascore.com/api/v1',
+];
+
+const defaultHeaders = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+  'Accept': 'application/json, text/plain, */*',
+  'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+  'Accept-Encoding': 'gzip, deflate, br',
+  'Referer': 'https://www.sofascore.com/',
+  'Origin': 'https://www.sofascore.com',
+  'Connection': 'keep-alive',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-site',
+  'Sec-Ch-Ua': '"Chromium";v="131", "Not_A Brand";v="24"',
+  'Sec-Ch-Ua-Mobile': '?0',
+  'Sec-Ch-Ua-Platform': '"Windows"',
+};
+
+const clients = BASES.map(base => axios.create({
+  baseURL: base,
   timeout: 15000,
-  headers: {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-    'Accept': 'application/json, text/plain, */*',
-    'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://www.sofascore.com/',
-    'Origin': 'https://www.sofascore.com',
-    'Connection': 'keep-alive',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'same-site',
-    'Sec-Ch-Ua': '"Chromium";v="131", "Not_A Brand";v="24"',
-    'Sec-Ch-Ua-Mobile': '?0',
-    'Sec-Ch-Ua-Platform': '"Windows"',
-  },
-});
+  headers: defaultHeaders,
+}));
+
+// Track which base URL works best
+let preferredClient = 0;
 
 // Rate limiter: max 1 request every 1.5 seconds
 let lastRequest = 0;
@@ -51,8 +61,27 @@ async function processQueue() {
   try {
     lastRequest = Date.now();
     console.log(`[SofaScore] Fetching: ${url}`);
-    const res = await client.get(url);
-    resolve(res.data);
+    // Try preferred client first, then fallback to others
+    let lastErr;
+    const order = [preferredClient, ...Array.from({length: clients.length}, (_, i) => i)].filter((v, i, a) => a.indexOf(v) === i);
+    for (const idx of order) {
+      try {
+        const res = await clients[idx].get(url);
+        if (idx !== preferredClient) {
+          console.log(`[SofaScore] Switching preferred base to ${BASES[idx]}`);
+          preferredClient = idx;
+        }
+        resolve(res.data);
+        return;
+      } catch (err) {
+        lastErr = err;
+        console.log(`[SofaScore] Base ${BASES[idx]} failed for ${url}: ${err.response?.status || err.message}`);
+      }
+    }
+    const status = lastErr.response?.status || 'network';
+    const msg = lastErr.response?.statusText || lastErr.message;
+    console.error(`[SofaScore] All bases failed for ${url}: ${status} ${msg}`);
+    reject(new Error(`SofaScore ${status}: ${msg}`));
   } catch (err) {
     const status = err.response?.status || 'network';
     const msg = err.response?.statusText || err.message;

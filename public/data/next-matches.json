@@ -1,0 +1,210 @@
+{
+  "events": [
+    {
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "13",
+      "tournament": {
+        "name": "Indian Wells, USA",
+        "slug": "indian-wells-usa",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Indian Wells",
+          "slug": "indian-wells",
+          "primaryColorHex": "#f3bd2a",
+          "secondaryColorHex": "#873968",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 7902,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "id": 2487,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة إنديان ويلز",
+              "hi": "इंडियन वेल्स",
+              "bn": "ইন্ডিয়ান ওয়েলস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 176052,
+        "endTimestamp": 1773532800,
+        "startTimestamp": 1772582400
+      },
+      "season": {
+        "name": "ATP Indian Wells, USA Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80797
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "slug": "round-of-16",
+        "cupRoundType": 8
+      },
+      "customId": "YJXsytkc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Casper Ruud",
+        "slug": "ruud-casper",
+        "shortName": "C. Ruud",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 36908,
+        "playerTeamInfo": {
+          "id": 118
+        },
+        "nameCode": "RUU",
+        "ranking": 13,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "id": 119248,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كاسبر رود",
+            "ru": "Рууд, Каспер"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. رود",
+            "bn": "সি. রুদ",
+            "hi": "सी. रूड"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15625024,
+      "slug": "carlos-alcaraz-casper-ruud",
+      "startTimestamp": 1773260400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    }
+  ]
+}

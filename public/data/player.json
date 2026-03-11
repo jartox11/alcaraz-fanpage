@@ -1,0 +1,163 @@
+{
+  "team": {
+    "name": "Carlos Alcaraz",
+    "slug": "alcaraz-carlos",
+    "shortName": "C. Alcaraz",
+    "gender": "M",
+    "sport": {
+      "name": "Tennis",
+      "slug": "tennis",
+      "id": 5
+    },
+    "category": {
+      "name": "ATP",
+      "slug": "atp",
+      "sport": {
+        "name": "Tennis",
+        "slug": "tennis",
+        "id": 5
+      },
+      "country": {},
+      "id": 3,
+      "flag": "atp",
+      "fieldTranslations": {
+        "nameTranslation": {
+          "bn": "এটিপি",
+          "hi": "डब्ल्यूटीए",
+          "ar": "رابطة محترفي التنس",
+          "ru": "ATP"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": {
+        "name": "ATP",
+        "slug": "atp",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "country": {},
+        "id": 3,
+        "flag": "atp",
+        "fieldTranslations": {
+          "nameTranslation": {
+            "bn": "এটিপি",
+            "hi": "डब्ल्यूटीए",
+            "ar": "رابطة محترفي التنس",
+            "ru": "ATP"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "uniqueTournament": {
+        "name": "Roland Garros",
+        "slug": "roland-garros",
+        "primaryColorHex": "#c85a19",
+        "secondaryColorHex": "#01503d",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "userCount": 36669,
+        "tennisPoints": 2000,
+        "hasPerformanceGraphFeature": false,
+        "country": {},
+        "id": 2480,
+        "displayInverseHomeAwayTeams": false,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "bn": "রোল্যান্ড গ্যারোস",
+            "ar": "بطولة رولان جاروس",
+            "hi": "रोलैंड गर्रोस"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "priority": 0,
+      "isLive": false,
+      "id": 93468,
+      "fieldTranslations": {
+        "nameTranslation": {
+          "ar": "بطولة فرنسا المفتوحة، باريس، فرنسا"
+        },
+        "shortNameTranslation": {}
+      }
+    },
+    "userCount": 243991,
+    "playerTeamInfo": {
+      "residence": "El Palmar, Murcia, Spain",
+      "birthplace": "El Palmar, Murcia, Spain",
+      "height": 1.83,
+      "weight": 74,
+      "plays": "right-handed",
+      "turnedPro": "2018",
+      "prizeCurrent": 2872505,
+      "prizeTotal": 55622557,
+      "id": 3111,
+      "birthDateTimestamp": 1052092800,
+      "prizeCurrentRaw": {
+        "value": 2872505,
+        "currency": "EUR"
+      },
+      "prizeTotalRaw": {
+        "value": 55622557,
+        "currency": "EUR"
+      },
+      "currentRanking": 1
+    },
+    "nameCode": "ALC",
+    "ranking": 1,
+    "class": 4,
+    "disabled": false,
+    "national": false,
+    "type": 1,
+    "country": {
+      "alpha2": "ES",
+      "alpha3": "ESP",
+      "name": "Spain",
+      "slug": "spain"
+    },
+    "id": 275923,
+    "fullName": "Carlos Alcaraz",
+    "teamColors": {
+      "primary": "#374df5",
+      "secondary": "#374df5",
+      "text": "#ffffff"
+    },
+    "fieldTranslations": {
+      "nameTranslation": {
+        "ar": "كارلوس ألكاراز",
+        "ru": "Алькарас Гарфия, Карлос"
+      },
+      "shortNameTranslation": {
+        "ar": "ك. ألكاراز",
+        "bn": "সি আলকারাজ",
+        "hi": "सी. अल्काराज़"
+      }
+    },
+    "timeActive": []
+  },
+  "pregameForm": null
+}

@@ -1,0 +1,7250 @@
+{
+  "events": [
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Tokyo, Japan",
+        "slug": "tokyo-japan",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Tokyo",
+          "slug": "tokyo",
+          "primaryColorHex": "#b41e23",
+          "secondaryColorHex": "#939192",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 2302,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2435,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "طوكيو",
+              "hi": "टोक्यो",
+              "bn": "টোকিও"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 163876,
+        "endTimestamp": 1759276800,
+        "startTimestamp": 1758672000,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "طوكيو، اليابان"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "ATP Tokyo, Japan Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67305
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "slug": "quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "BlUbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Brandon Nakashima",
+        "slug": "nakashima-brandon",
+        "shortName": "B. Nakashima",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 7172,
+        "playerTeamInfo": {
+          "id": 2981
+        },
+        "nameCode": "NAK",
+        "ranking": 30,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 235576,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "براندون ناكاشيما",
+            "bn": "বি ল্যান্ডন নাকাজিমা",
+            "hi": "ब्रैंडन नकशिमा",
+            "ru": "Накасима, Брэндон"
+          },
+          "shortNameTranslation": {
+            "ar": "ب. ناكاشيما"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 4,
+        "point": "0",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 1874,
+        "period2": 2968,
+        "currentPeriodStartTimestamp": 1759050067
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1759053093
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14707438,
+      "slug": "carlos-alcaraz-brandon-nakashima",
+      "startTimestamp": 1759047300,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "4",
+      "tournament": {
+        "name": "Tokyo, Japan",
+        "slug": "tokyo-japan",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Tokyo",
+          "slug": "tokyo",
+          "primaryColorHex": "#b41e23",
+          "secondaryColorHex": "#939192",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 2302,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2435,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "طوكيو",
+              "hi": "टोक्यो",
+              "bn": "টোকিও"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 163876,
+        "endTimestamp": 1759276800,
+        "startTimestamp": 1758672000,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "طوكيو، اليابان"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "ATP Tokyo, Japan Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67305
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "slug": "semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "YJXsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Casper Ruud",
+        "slug": "ruud-casper",
+        "shortName": "C. Ruud",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 36908,
+        "playerTeamInfo": {
+          "id": 118
+        },
+        "nameCode": "RUU",
+        "ranking": 13,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "id": 119248,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كاسبر رود",
+            "ru": "Рууд, Каспер"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. رود",
+            "bn": "সি. রুদ",
+            "hi": "सी. रूड"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 3,
+        "period2": 6,
+        "period3": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 3,
+        "period3": 4,
+        "point": "30",
+        "normaltime": 1
+      },
+      "time": {
+        "period1": 2729,
+        "period2": 1855,
+        "period3": 3113,
+        "currentPeriodStartTimestamp": 1759141678
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period3"
+        ],
+        "changeTimestamp": 1759144823
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14707436,
+      "slug": "carlos-alcaraz-casper-ruud",
+      "startTimestamp": 1759136400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "2",
+      "tournament": {
+        "name": "Tokyo, Japan",
+        "slug": "tokyo-japan",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Tokyo",
+          "slug": "tokyo",
+          "primaryColorHex": "#b41e23",
+          "secondaryColorHex": "#939192",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 2302,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2435,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "طوكيو",
+              "hi": "टोक्यो",
+              "bn": "টোকিও"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 163876,
+        "endTimestamp": 1759276800,
+        "startTimestamp": 1758672000,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "طوكيو، اليابان"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "ATP Tokyo, Japan Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67305
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "Rvebsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Taylor Fritz",
+        "slug": "fritz-taylor",
+        "shortName": "T. Fritz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 37624,
+        "playerTeamInfo": {
+          "id": 46
+        },
+        "nameCode": "FRI",
+        "ranking": 7,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 136042,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تايلور فريتز",
+            "ru": "Фритц, Тэйлор Гэрри"
+          },
+          "shortNameTranslation": {
+            "ar": "ت. فريتز",
+            "bn": "টি. ফ্রিটজ",
+            "hi": "टी. फ्रिट्ज"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "period2": 4,
+        "point": "30",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2851,
+        "period2": 2755,
+        "currentPeriodStartTimestamp": 1759226493
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1759229380
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14707430,
+      "slug": "carlos-alcaraz-taylor-fritz",
+      "startTimestamp": 1759222800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Riyadh Exhibition",
+        "slug": "riyadh-exhibition",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Six Kings Slam",
+          "slug": "riyadh-exhibition",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 4135,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 23852,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة الملوك الستة",
+              "bn": "সিক্স কিংস স্ল্যাম",
+              "hi": "सिक्स किंग्स स्लैम"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 28,
+        "isGroup": false,
+        "id": 166243,
+        "endTimestamp": 1760745600,
+        "startTimestamp": 1760486400,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "معرض الرياض"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Riyadh Exhibition 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 84606
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "slug": "semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "Rvebsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Taylor Fritz",
+        "slug": "fritz-taylor",
+        "shortName": "T. Fritz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 37624,
+        "playerTeamInfo": {
+          "id": 46
+        },
+        "nameCode": "FRI",
+        "ranking": 7,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 136042,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تايلور فريتز",
+            "ru": "Фритц, Тэйлор Гэрри"
+          },
+          "shortNameTranslation": {
+            "ar": "ت. فريتز",
+            "bn": "টি. ফ্রিটজ",
+            "hi": "टी. फ्रिट्ज"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "A",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "period2": 2,
+        "point": "40",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2013,
+        "period2": 2135,
+        "currentPeriodStartTimestamp": 1760635612
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1760637787
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14892706,
+      "slug": "carlos-alcaraz-taylor-fritz",
+      "startTimestamp": 1760632200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Riyadh Exhibition",
+        "slug": "riyadh-exhibition",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Six Kings Slam",
+          "slug": "riyadh-exhibition",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 4135,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 23852,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة الملوك الستة",
+              "bn": "সিক্স কিংস স্ল্যাম",
+              "hi": "सिक्स किंग्स स्लैम"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 28,
+        "isGroup": false,
+        "id": 166243,
+        "endTimestamp": 1760745600,
+        "startTimestamp": 1760486400,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "معرض الرياض"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "Riyadh Exhibition 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 84606
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "vGHbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Jannik Sinner",
+        "slug": "sinner-jannik",
+        "shortName": "J. Sinner",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 216768,
+        "playerTeamInfo": {
+          "id": 481
+        },
+        "nameCode": "SIN",
+        "ranking": 2,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "id": 206570,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يانك سينر",
+            "ru": "Синнер, Янник"
+          },
+          "shortNameTranslation": {
+            "ar": "ي. سينر",
+            "bn": "জে সিনার",
+            "hi": "जे. सिनर"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 4,
+        "point": "0",
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "time": {
+        "period1": 1643,
+        "period2": 2673,
+        "currentPeriodStartTimestamp": 1760814988
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1760817686
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14900912,
+      "slug": "carlos-alcaraz-jannik-sinner",
+      "startTimestamp": 1760812800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Paris, France",
+        "slug": "paris-france",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Paris",
+          "slug": "paris",
+          "primaryColorHex": "#174742",
+          "secondaryColorHex": "#2b7064",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 6532,
+          "groundType": "Hardcourt indoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2404,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "باريس",
+              "hi": "पेरिस",
+              "bn": "প্যারিস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 140742,
+        "endTimestamp": 1730592000,
+        "startTimestamp": 1730073600,
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "باريس، فرنسا"
+          },
+          "shortNameTranslation": {}
+        }
+      },
+      "season": {
+        "name": "ATP Paris, France Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67291
+      },
+      "roundInfo": {
+        "round": 6,
+        "name": "Round of 32",
+        "slug": "round-of-32",
+        "cupRoundType": 16
+      },
+      "customId": "KtNsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Cameron Norrie",
+        "slug": "norrie-cameron",
+        "shortName": "C. Norrie",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 13782,
+        "playerTeamInfo": {
+          "id": 64
+        },
+        "nameCode": "NOR",
+        "ranking": 29,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "GB",
+          "alpha3": "GBR",
+          "name": "United Kingdom",
+          "slug": "united-kingdom"
+        },
+        "id": 95935,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كاميرون نورري",
+            "ru": "Норри, Камерон"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. نورري",
+            "bn": "​​সি. নরি",
+            "hi": "सी. नॉरी"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 3,
+        "period3": 4,
+        "point": "30",
+        "normaltime": 1
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 4,
+        "period2": 6,
+        "period3": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "time": {
+        "period1": 3103,
+        "period2": 2286,
+        "period3": 3191,
+        "currentPeriodStartTimestamp": 1761680282
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period3"
+        ],
+        "changeTimestamp": 1761683515
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 14957028,
+      "slug": "carlos-alcaraz-cameron-norrie",
+      "startTimestamp": 1761674400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "tournament": {
+        "name": "Tour Finals Turin, Italy, Group Jimmy Connors",
+        "slug": "tour-finals-turin-italy-group-jimmy-connors",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ATP Finals",
+          "slug": "atp-finals",
+          "primaryColorHex": "#3dbfed",
+          "secondaryColorHex": "#017ccb",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 24883,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2517,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি ফাইনাল",
+              "ar": "نهائيات رابطة محترفي التنس",
+              "hi": "एटीपी फाइनल्स"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": true,
+        "groupName": "Group Jimmy Connors",
+        "id": 168409,
+        "endTimestamp": 1763078400,
+        "startTimestamp": 1762646400
+      },
+      "season": {
+        "name": "ATP World Tour Finals Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67326
+      },
+      "roundInfo": {
+        "round": 1
+      },
+      "customId": "OzFbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Alex de Minaur",
+        "slug": "de-minaur-alex",
+        "shortName": "A. de Minaur",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 31698,
+        "playerTeamInfo": {
+          "id": 26
+        },
+        "nameCode": "DE",
+        "ranking": 6,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 201239,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أليكس دي ميناور",
+            "ru": "Де Минаур, Алекс"
+          },
+          "shortNameTranslation": {
+            "ar": "أ. دي ميناور",
+            "bn": "এ. ডি মিনাউর",
+            "hi": "ए. डी मिनौर"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 6,
+        "period1TieBreak": 7,
+        "point": "A",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 2,
+        "period1TieBreak": 5,
+        "point": "40",
+        "normaltime": 0
+      },
+      "coverage": -1,
+      "time": {
+        "period1": 3770,
+        "period2": 2241,
+        "currentPeriodStartTimestamp": 1762697809
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1762700107
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15017492,
+      "slug": "carlos-alcaraz-alex-de-minaur",
+      "startTimestamp": 1762693200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "tournament": {
+        "name": "Tour Finals Turin, Italy, Group Jimmy Connors",
+        "slug": "tour-finals-turin-italy-group-jimmy-connors",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ATP Finals",
+          "slug": "atp-finals",
+          "primaryColorHex": "#3dbfed",
+          "secondaryColorHex": "#017ccb",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 24883,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2517,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি ফাইনাল",
+              "ar": "نهائيات رابطة محترفي التنس",
+              "hi": "एटीपी फाइनल्स"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": true,
+        "groupName": "Group Jimmy Connors",
+        "id": 168409,
+        "endTimestamp": 1763078400,
+        "startTimestamp": 1762646400
+      },
+      "season": {
+        "name": "ATP World Tour Finals Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67326
+      },
+      "roundInfo": {
+        "round": 2
+      },
+      "customId": "Rvebsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Taylor Fritz",
+        "slug": "fritz-taylor",
+        "shortName": "T. Fritz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 37624,
+        "playerTeamInfo": {
+          "id": 46
+        },
+        "nameCode": "FRI",
+        "ranking": 7,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 136042,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تايلور فريتز",
+            "ru": "Фритц, Тэйлор Гэрри"
+          },
+          "shortNameTranslation": {
+            "ar": "ت. فريتز",
+            "bn": "টি. ফ্রিটজ",
+            "hi": "टी. फ्रिट्ज"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 7,
+        "period3": 6,
+        "period1TieBreak": 2,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 5,
+        "period3": 3,
+        "period1TieBreak": 7,
+        "normaltime": 1
+      },
+      "coverage": -1,
+      "time": {
+        "period1": 4259,
+        "period2": 3553,
+        "period3": 2275,
+        "currentPeriodStartTimestamp": 1762874528
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1765795090
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15017473,
+      "slug": "carlos-alcaraz-taylor-fritz",
+      "startTimestamp": 1762866000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "tournament": {
+        "name": "Tour Finals Turin, Italy, Group Jimmy Connors",
+        "slug": "tour-finals-turin-italy-group-jimmy-connors",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ATP Finals",
+          "slug": "atp-finals",
+          "primaryColorHex": "#3dbfed",
+          "secondaryColorHex": "#017ccb",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 24883,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2517,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি ফাইনাল",
+              "ar": "نهائيات رابطة محترفي التنس",
+              "hi": "एटीपी फाइनल्स"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": true,
+        "groupName": "Group Jimmy Connors",
+        "id": 168409,
+        "endTimestamp": 1763078400,
+        "startTimestamp": 1762646400
+      },
+      "season": {
+        "name": "ATP World Tour Finals Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67326
+      },
+      "roundInfo": {
+        "round": 3
+      },
+      "customId": "pvecsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Lorenzo Musetti",
+        "slug": "musetti-lorenzo",
+        "shortName": "L. Musetti",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 56568,
+        "playerTeamInfo": {
+          "id": 3705
+        },
+        "nameCode": "MUS",
+        "ranking": 5,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "id": 261015,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "لورينزو موسيتي",
+            "ru": "Мусетти, Лоренцо"
+          },
+          "shortNameTranslation": {
+            "ar": "ل. موسيتي",
+            "bn": "এল. মুসেটি",
+            "hi": "एल. मुसेटी"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "A",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "period2": 1,
+        "point": "40",
+        "normaltime": 0
+      },
+      "coverage": -1,
+      "time": {
+        "period1": 2707,
+        "period2": 2299,
+        "currentPeriodStartTimestamp": 1763065630
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1763068063
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15023095,
+      "slug": "carlos-alcaraz-lorenzo-musetti",
+      "startTimestamp": 1763062200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "8",
+      "tournament": {
+        "name": "Tour Finals Turin, Italy",
+        "slug": "tour-finals-turin-italy",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ATP Finals",
+          "slug": "atp-finals",
+          "primaryColorHex": "#3dbfed",
+          "secondaryColorHex": "#017ccb",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 24883,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2517,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি ফাইনাল",
+              "ar": "نهائيات رابطة محترفي التنس",
+              "hi": "एटीपी फाइनल्स"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 168997,
+        "endTimestamp": 1763251200,
+        "startTimestamp": 1763164800
+      },
+      "season": {
+        "name": "ATP World Tour Finals Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67326
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "slug": "semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "nPBbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Felix Auger-Aliassime",
+        "slug": "auger-aliassime-felix",
+        "shortName": "F. Auger-Aliassime",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 27866,
+        "playerTeamInfo": {
+          "id": 60
+        },
+        "nameCode": "AUG",
+        "ranking": 9,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "CA",
+          "alpha3": "CAN",
+          "name": "Canada",
+          "slug": "canada"
+        },
+        "id": 192013,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فيليكس أوجر-علياسيم",
+            "ru": "Оже-Альяссим, Феликс"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. أوجر-علياسيم",
+            "bn": "এফ অগার-আলিয়াসিম",
+            "hi": "एफ. ऑगर-अलियासिम"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 4,
+        "point": "30",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2257,
+        "period2": 2724,
+        "currentPeriodStartTimestamp": 1763237970
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1763240747
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15104536,
+      "slug": "carlos-alcaraz-felix-auger-aliassime",
+      "startTimestamp": 1763235000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "2",
+      "tournament": {
+        "name": "Tour Finals Turin, Italy",
+        "slug": "tour-finals-turin-italy",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "ATP Finals",
+          "slug": "atp-finals",
+          "primaryColorHex": "#3dbfed",
+          "secondaryColorHex": "#017ccb",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 24883,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2517,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি ফাইনাল",
+              "ar": "نهائيات رابطة محترفي التنس",
+              "hi": "एटीपी फाइनल्स"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 168997,
+        "endTimestamp": 1763251200,
+        "startTimestamp": 1763164800
+      },
+      "season": {
+        "name": "ATP World Tour Finals Men Singles 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 67326
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "vGHbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Jannik Sinner",
+        "slug": "sinner-jannik",
+        "shortName": "J. Sinner",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 216768,
+        "playerTeamInfo": {
+          "id": 481
+        },
+        "nameCode": "SIN",
+        "ranking": 2,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "id": 206570,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يانك سينر",
+            "ru": "Синнер, Янник"
+          },
+          "shortNameTranslation": {
+            "ar": "ي. سينر",
+            "bn": "জে সিনার",
+            "hi": "जे. सिनर"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 5,
+        "period1TieBreak": 4,
+        "point": "40",
+        "normaltime": 0
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 7,
+        "period1TieBreak": 7,
+        "point": "A",
+        "normaltime": 2
+      },
+      "time": {
+        "period1": 4087,
+        "period2": 3368,
+        "currentPeriodStartTimestamp": 1763318006
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1763321411
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15108295,
+      "slug": "carlos-alcaraz-jannik-sinner",
+      "startTimestamp": 1763312400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false
+    },
+    {
+      "tournament": {
+        "name": "A Racquet at The Rock",
+        "slug": "a-racquet-at-the-rock",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "A Racquet at The Rock",
+          "slug": "a-racquet-at-the-rock",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 53,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 31356,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 170486,
+        "endTimestamp": 1765152000,
+        "startTimestamp": 1765065600
+      },
+      "season": {
+        "name": "A Racquet at The Rock 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 87102
+      },
+      "customId": "bxPsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Frances Tiafoe",
+        "slug": "tiafoe-frances",
+        "shortName": "F. Tiafoe",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 20633,
+        "playerTeamInfo": {
+          "id": 34
+        },
+        "nameCode": "TIA",
+        "ranking": 22,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 101101,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فرانسيس تيافوي",
+            "ru": "Тиафо, Фрэнсис"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. تيافوي",
+            "bn": "এফ. টিয়াফো",
+            "hi": "एफ. टियाफो"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 3,
+        "period2": 6,
+        "period3": 7
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 3,
+        "period3": 10
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3"
+        ],
+        "changeTimestamp": 1765171172
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15178116,
+      "slug": "carlos-alcaraz-frances-tiafoe",
+      "startTimestamp": 1765150800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": true,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "lower"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Miami Invitational",
+        "slug": "miami-invitational",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Miami Invitational",
+          "slug": "miami-invitational",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 68,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 31343,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 170461,
+        "endTimestamp": 1765238400,
+        "startTimestamp": 1765152000
+      },
+      "season": {
+        "name": "Riyadh Exhibition 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 86992
+      },
+      "customId": "uwmjsvwmj",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Alcaraz C / Pegula J",
+        "slug": "alcaraz-c-pegula-j",
+        "gender": "X",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 22,
+        "nameCode": "A/P",
+        "national": false,
+        "type": 2,
+        "country": {},
+        "id": 1156069,
+        "subTeams": [
+          {
+            "name": "Carlos Alcaraz",
+            "slug": "alcaraz-carlos",
+            "shortName": "C. Alcaraz",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 243991,
+            "playerTeamInfo": {
+              "id": 3111
+            },
+            "nameCode": "ALC",
+            "ranking": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ES",
+              "alpha3": "ESP",
+              "name": "Spain",
+              "slug": "spain"
+            },
+            "id": 275923,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كارلوس ألكاراز",
+                "ru": "Алькарас Гарфия, Карлос"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. ألكاراز",
+                "bn": "সি আলকারাজ",
+                "hi": "सी. अल्काराज़"
+              }
+            }
+          },
+          {
+            "name": "Jessica Pegula",
+            "slug": "pegula-jessica",
+            "shortName": "J. Pegula",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 21184,
+            "playerTeamInfo": {
+              "id": 311
+            },
+            "nameCode": "PEG",
+            "ranking": 5,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 44834,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "جيسيكا بيغولا",
+                "ru": "Пегула, Джессика"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. بيغولا",
+                "bn": "জে. পেগুলা",
+                "hi": "जे. पेगुला"
+              }
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "awayTeam": {
+        "name": "Fonseca J / Anisimova A",
+        "slug": "fonseca-j-anisimova-a",
+        "gender": "X",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 22,
+        "nameCode": "F/A",
+        "national": false,
+        "type": 2,
+        "country": {},
+        "id": 1156070,
+        "subTeams": [
+          {
+            "name": "Amanda Anisimova",
+            "slug": "anisimova-amanda",
+            "shortName": "A. Anisimova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 17774,
+            "playerTeamInfo": {
+              "id": 240
+            },
+            "nameCode": "ANI",
+            "ranking": 6,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 230628,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أماندا أنيسيموفا",
+                "bn": "আমান্ডা আনিসিমোভা",
+                "hi": "अमांडा अनीसिमोवा",
+                "ru": "Анисимова, Аманда"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. أنيسيموفا"
+              }
+            }
+          },
+          {
+            "name": "Joao Fonseca",
+            "slug": "fonseca-joao",
+            "shortName": "J. Fonseca",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 58018,
+            "playerTeamInfo": {
+              "id": 5787
+            },
+            "nameCode": "FON",
+            "ranking": 35,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "BR",
+              "alpha3": "BRA",
+              "name": "Brazil",
+              "slug": "brazil"
+            },
+            "id": 403869,
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "جواو فونسيكا"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. فونسيكا"
+              }
+            }
+          }
+        ],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "homeScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 10
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 8
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1"
+        ],
+        "changeTimestamp": 1765276376
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15176464,
+      "slug": "fonseca-anisimova-alcaraz-pegula",
+      "startTimestamp": 1765242600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": true,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "doubles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "lower"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "Miami Invitational",
+        "slug": "miami-invitational",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Miami Invitational",
+          "slug": "miami-invitational",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 68,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 31343,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 170461,
+        "endTimestamp": 1765238400,
+        "startTimestamp": 1765152000
+      },
+      "season": {
+        "name": "Riyadh Exhibition 2025",
+        "year": "2025",
+        "editor": false,
+        "id": 86992
+      },
+      "customId": "ytkcsuCld",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Joao Fonseca",
+        "slug": "fonseca-joao",
+        "shortName": "J. Fonseca",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 58018,
+        "playerTeamInfo": {
+          "id": 5787
+        },
+        "nameCode": "FON",
+        "ranking": 35,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "BR",
+          "alpha3": "BRA",
+          "name": "Brazil",
+          "slug": "brazil"
+        },
+        "id": 403869,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "جواو فونسيكا"
+          },
+          "shortNameTranslation": {
+            "ar": "ج. فونسيكا"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 2,
+        "period3": 10,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 5,
+        "period2": 6,
+        "period3": 8,
+        "normaltime": 1
+      },
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "homeScore.period3",
+          "homeScore.normaltime",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2",
+          "awayScore.period3",
+          "awayScore.normaltime"
+        ],
+        "changeTimestamp": 1765252490
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15176463,
+      "slug": "joao-fonseca-carlos-alcaraz",
+      "startTimestamp": 1765243800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "lower"
+        ]
+      }
+    },
+    {
+      "tournament": {
+        "name": "South Korea Exhibition",
+        "slug": "south-korea-exhibition",
+        "category": {
+          "name": "Exhibition",
+          "slug": "exhibition",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 79,
+          "flag": "exhibition",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "معرض",
+              "ru": "Товарищеский матч"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "South Korea Exhibition",
+          "slug": "south-korea-exhibition",
+          "category": {
+            "name": "Exhibition",
+            "slug": "exhibition",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 79,
+            "flag": "exhibition",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "معرض",
+                "ru": "Товарищеский матч"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 35,
+          "groundType": "Hardcourt indoor",
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 31861,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false
+        },
+        "priority": 0,
+        "id": 172787
+      },
+      "season": {
+        "name": "2026",
+        "year": "2026",
+        "editor": false,
+        "id": 88373
+      },
+      "customId": "vGHbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 2,
+      "homeTeam": {
+        "name": "Jannik Sinner",
+        "slug": "sinner-jannik",
+        "shortName": "J. Sinner",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 216768,
+        "playerTeamInfo": {
+          "id": 481
+        },
+        "nameCode": "SIN",
+        "ranking": 2,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "IT",
+          "alpha3": "ITA",
+          "name": "Italy",
+          "slug": "italy"
+        },
+        "id": 206570,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يانك سينر",
+            "ru": "Синнер, Янник"
+          },
+          "shortNameTranslation": {
+            "ar": "ي. سينر",
+            "bn": "জে সিনার",
+            "hi": "जे. सिनर"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "period2": 6
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 7
+      },
+      "coverage": -1,
+      "time": {},
+      "changes": {
+        "changes": [
+          "status.code",
+          "status.description",
+          "status.type",
+          "homeScore.current",
+          "homeScore.display",
+          "homeScore.period1",
+          "homeScore.period2",
+          "awayScore.current",
+          "awayScore.display",
+          "awayScore.period1",
+          "awayScore.period2"
+        ],
+        "changeTimestamp": 1768201584
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15337952,
+      "slug": "carlos-alcaraz-jannik-sinner",
+      "startTimestamp": 1768028400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": true,
+      "groundType": "Hardcourt indoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "lower"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 64,
+        "name": "Round of 128",
+        "slug": "round-of-128"
+      },
+      "customId": "AbIbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Adam Walton",
+        "slug": "walton-adam",
+        "shortName": "A. Walton",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3340,
+        "playerTeamInfo": {
+          "id": 4322
+        },
+        "nameCode": "WAL",
+        "ranking": 91,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 207575,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "آدم والتون",
+            "ru": "Уолтон, Адам"
+          },
+          "shortNameTranslation": {
+            "ar": "آ. والتون"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 6,
+        "period2": 7,
+        "period3": 6,
+        "period2TieBreak": 7,
+        "point": "40",
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 3,
+        "period2": 6,
+        "period3": 2,
+        "period2TieBreak": 2,
+        "point": "30",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2051,
+        "period2": 3556,
+        "period3": 1909,
+        "currentPeriodStartTimestamp": 1768735851
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1768737893
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15372343,
+      "slug": "carlos-alcaraz-adam-walton",
+      "startTimestamp": 1768730100,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 32,
+        "name": "Round of 64",
+        "slug": "round-of-64"
+      },
+      "customId": "Ajusytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Yannick Hanfmann",
+        "slug": "hanfmann-yannick",
+        "shortName": "Y. Hanfmann",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 5330,
+        "playerTeamInfo": {
+          "id": 212
+        },
+        "nameCode": "HAN",
+        "ranking": 65,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "id": 47975,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "يانيك هانفمان",
+            "ru": "Ханфманн, Янник"
+          },
+          "shortNameTranslation": {
+            "ar": "ي. هانفمان",
+            "bn": "ওয়াই. হ্যানফম্যান",
+            "hi": "वाई. हैंफमैन"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 7,
+        "period2": 6,
+        "period3": 6,
+        "period1TieBreak": 7,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 3,
+        "period3": 2,
+        "period1TieBreak": 4,
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 4691,
+        "period2": 2582,
+        "period3": 2582,
+        "currentPeriodStartTimestamp": 1768972442
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1769507511
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345285,
+      "slug": "carlos-alcaraz-yannick-hanfmann",
+      "startTimestamp": 1768965000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "32",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 6,
+        "name": "Round of 32",
+        "slug": "round-of-32",
+        "cupRoundType": 16
+      },
+      "customId": "oavbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Corentin Moutet",
+        "slug": "moutet-corentin",
+        "shortName": "C. Moutet",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 9338,
+        "playerTeamInfo": {
+          "id": 180
+        },
+        "nameCode": "MOU",
+        "ranking": 33,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 175014,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كورنتين موتيه",
+            "bn": "কোরেন্টিন মাউটেট",
+            "hi": "कोरेंटिन माउटे",
+            "ru": "Муте, Корентин"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. موتيه"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 6,
+        "period2": 6,
+        "period3": 6,
+        "point": "A",
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 4,
+        "period3": 1,
+        "point": "40",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2118,
+        "period2": 3089,
+        "period3": 2296,
+        "currentPeriodStartTimestamp": 1769143017
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period3"
+        ],
+        "changeTimestamp": 1769145368
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345259,
+      "slug": "carlos-alcaraz-corentin-moutet",
+      "startTimestamp": 1769137500,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "19",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "slug": "round-of-16",
+        "cupRoundType": 8
+      },
+      "customId": "Wvfbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Tommy Paul",
+        "slug": "paul-tommy",
+        "shortName": "T. Paul",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 17597,
+        "playerTeamInfo": {
+          "id": 278
+        },
+        "nameCode": "PAU",
+        "ranking": 24,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "US",
+          "alpha3": "USA",
+          "name": "USA",
+          "slug": "usa"
+        },
+        "id": 138546,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "تومي بول",
+            "ru": "Пол, Томми"
+          },
+          "shortNameTranslation": {
+            "ar": "ت. بول",
+            "bn": "টি. পল",
+            "hi": "टी. पॉल"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 7,
+        "period2": 6,
+        "period3": 7,
+        "period1TieBreak": 8,
+        "point": "40",
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 4,
+        "period3": 5,
+        "period1TieBreak": 6,
+        "point": "15",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 4303,
+        "period2": 2451,
+        "period3": 3111,
+        "currentPeriodStartTimestamp": 1769315858
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period3"
+        ],
+        "changeTimestamp": 1769319004
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345277,
+      "slug": "carlos-alcaraz-tommy-paul",
+      "startTimestamp": 1769308800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "6",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "slug": "quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "OzFbsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Alex de Minaur",
+        "slug": "de-minaur-alex",
+        "shortName": "A. de Minaur",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 31698,
+        "playerTeamInfo": {
+          "id": 26
+        },
+        "nameCode": "DE",
+        "ranking": 6,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "AU",
+          "alpha3": "AUS",
+          "name": "Australia",
+          "slug": "australia"
+        },
+        "id": 201239,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أليكس دي ميناور",
+            "ru": "Де Минаур, Алекс"
+          },
+          "shortNameTranslation": {
+            "ar": "أ. دي ميناور",
+            "bn": "এ. ডি মিনাউর",
+            "hi": "ए. डी मिनौर"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 7,
+        "period2": 6,
+        "period3": 6,
+        "point": "40",
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 5,
+        "period2": 2,
+        "period3": 1,
+        "point": "15",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 3514,
+        "period2": 2641,
+        "period3": 1980,
+        "currentPeriodStartTimestamp": 1769512216
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1769514325
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345266,
+      "slug": "carlos-alcaraz-alex-de-minaur",
+      "startTimestamp": 1769505900,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "3",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "slug": "semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "nTxsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Alexander Zverev",
+        "slug": "zverev-alexander",
+        "shortName": "A. Zverev",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 77687,
+        "playerTeamInfo": {
+          "id": 3
+        },
+        "nameCode": "ZVE",
+        "ranking": 4,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "DE",
+          "alpha3": "DEU",
+          "name": "Germany",
+          "slug": "germany"
+        },
+        "id": 57163,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "ألكسندر زفيريف",
+            "bn": "আলেকজান্ডার জাভেরেভ",
+            "hi": "अलेक्ज़ेंडर ज़्वेरेव",
+            "ru": "Зверев, Александер"
+          },
+          "shortNameTranslation": {
+            "ar": "أ. زفيريف"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 6,
+        "period2": 7,
+        "period3": 6,
+        "period4": 6,
+        "period5": 7,
+        "period2TieBreak": 7,
+        "period3TieBreak": 3,
+        "period4TieBreak": 4,
+        "point": "A",
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 4,
+        "period2": 6,
+        "period3": 7,
+        "period4": 7,
+        "period5": 5,
+        "period2TieBreak": 5,
+        "period3TieBreak": 7,
+        "period4TieBreak": 7,
+        "point": "40",
+        "normaltime": 2
+      },
+      "time": {
+        "period1": 2428,
+        "period2": 4648,
+        "period3": 3927,
+        "period4": 3811,
+        "period5": 4808,
+        "currentPeriodStartTimestamp": 1769759689
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1769764562
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345296,
+      "slug": "carlos-alcaraz-alexander-zverev",
+      "startTimestamp": 1769744700,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "4",
+      "tournament": {
+        "name": "Australian Open, Melbourne, Australia",
+        "slug": "australian-open-melbourne-australia",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Australian Open",
+          "slug": "australian-open",
+          "primaryColorHex": "#d0d830",
+          "secondaryColorHex": "#2294dc",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 31599,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 2000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2363,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة أستراليا المفتوحة",
+              "hi": "ऑस्ट्रेलियन ओपन",
+              "bn": "অস্ট্রেলিয়ান ওপেন"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 172867,
+        "endTimestamp": 1769904000,
+        "startTimestamp": 1768694400
+      },
+      "season": {
+        "name": "Australian Open Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80012
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "HXfsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Novak Djokovic",
+        "slug": "djokovic-novak",
+        "shortName": "N. Djokovic",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 261300,
+        "playerTeamInfo": {
+          "id": 1
+        },
+        "nameCode": "DJO",
+        "ranking": 3,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "RS",
+          "alpha3": "SRB",
+          "name": "Serbia",
+          "slug": "serbia"
+        },
+        "id": 14882,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "نوفاك ديوكوفيتش",
+            "ru": "Джокович, Новак"
+          },
+          "shortNameTranslation": {
+            "ar": "ن. ديوكوفيتش",
+            "bn": "এন. জোকোভিচ",
+            "hi": "एन. जोकोविच"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 3,
+        "display": 3,
+        "period1": 2,
+        "period2": 6,
+        "period3": 6,
+        "period4": 7,
+        "normaltime": 3
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 6,
+        "period2": 2,
+        "period3": 3,
+        "period4": 5,
+        "normaltime": 1
+      },
+      "time": {
+        "period1": 1965,
+        "period2": 2161,
+        "period3": 3069,
+        "period4": 3727,
+        "currentPeriodStartTimestamp": 1769942759
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1770796100
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15345300,
+      "slug": "carlos-alcaraz-novak-djokovic",
+      "startTimestamp": 1769935200,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "grand-slam"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Doha, Qatar",
+        "slug": "doha-qatar",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Doha",
+          "slug": "doha",
+          "primaryColorHex": "#0b542a",
+          "secondaryColorHex": "#cbdb2c",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3174,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2420,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوحة",
+              "hi": "दोहा",
+              "bn": "দোহা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 174950,
+        "endTimestamp": 1771632000,
+        "startTimestamp": 1771200000
+      },
+      "season": {
+        "name": "ATP Doha, Qatar Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80240
+      },
+      "roundInfo": {
+        "round": 6,
+        "name": "Round of 32",
+        "slug": "round-of-32",
+        "cupRoundType": 16
+      },
+      "customId": "gxAsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Arthur Rinderknech",
+        "slug": "rinderknech-arthur",
+        "shortName": "A. Rinderknech",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 8344,
+        "playerTeamInfo": {
+          "id": 626
+        },
+        "nameCode": "RIN",
+        "ranking": 28,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 63606,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "آرثر ريندركنش",
+            "bn": "আর্থার রিন্ডারকনেচ",
+            "hi": "आर्थर रिंडरक्नेक",
+            "ru": "Риндеркнеч, Артур"
+          },
+          "shortNameTranslation": {
+            "ar": "آ. ريندركنش"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 7,
+        "period2TieBreak": 7,
+        "point": "6",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 4,
+        "period2": 6,
+        "period2TieBreak": 5,
+        "point": "5",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 3121,
+        "period2": 3315,
+        "currentPeriodStartTimestamp": 1771349587
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1771352960
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15543167,
+      "slug": "carlos-alcaraz-arthur-rinderknech",
+      "startTimestamp": 1771345800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p500"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Doha, Qatar",
+        "slug": "doha-qatar",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Doha",
+          "slug": "doha",
+          "primaryColorHex": "#0b542a",
+          "secondaryColorHex": "#cbdb2c",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3174,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2420,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوحة",
+              "hi": "दोहा",
+              "bn": "দোহা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 174950,
+        "endTimestamp": 1771632000,
+        "startTimestamp": 1771200000
+      },
+      "season": {
+        "name": "ATP Doha, Qatar Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80240
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "slug": "round-of-16",
+        "cupRoundType": 8
+      },
+      "customId": "Ziccsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Valentin Royer",
+        "slug": "royer-valentin",
+        "shortName": "V. Royer",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 3769,
+        "playerTeamInfo": {
+          "id": 3942
+        },
+        "nameCode": "ROY",
+        "ranking": 60,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 255449,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "فالنتين رويير",
+            "ru": "Роер, Валентин"
+          },
+          "shortNameTranslation": {
+            "ar": "ف. رويير"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 7,
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 5,
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 2169,
+        "period2": 3586,
+        "currentPeriodStartTimestamp": 1771441441
+      },
+      "changes": {
+        "changes": [
+          "homeScore.point",
+          "awayScore.point"
+        ],
+        "changeTimestamp": 1771522357
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15522199,
+      "slug": "carlos-alcaraz-valentin-royer",
+      "startTimestamp": 1771438500,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p500"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "7",
+      "tournament": {
+        "name": "Doha, Qatar",
+        "slug": "doha-qatar",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Doha",
+          "slug": "doha",
+          "primaryColorHex": "#0b542a",
+          "secondaryColorHex": "#cbdb2c",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3174,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2420,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوحة",
+              "hi": "दोहा",
+              "bn": "দোহা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 174950,
+        "endTimestamp": 1771632000,
+        "startTimestamp": 1771200000
+      },
+      "season": {
+        "name": "ATP Doha, Qatar Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80240
+      },
+      "roundInfo": {
+        "round": 27,
+        "name": "Quarterfinals",
+        "slug": "quarterfinals",
+        "cupRoundType": 4
+      },
+      "customId": "FbLsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Karen Khachanov",
+        "slug": "khachanov-karen",
+        "shortName": "K. Khachanov",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 17739,
+        "playerTeamInfo": {
+          "id": 12
+        },
+        "nameCode": "KHA",
+        "ranking": 16,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "id": 90080,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارين خاشانوف",
+            "ru": "Хачанов, Карен"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. خاشانوف",
+            "bn": "কে. খাচানভ",
+            "hi": "के. खाचानोव"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "period3": 6,
+        "period1TieBreak": 3,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 4,
+        "period3": 3,
+        "period1TieBreak": 7,
+        "point": "30",
+        "normaltime": 1
+      },
+      "time": {
+        "period1": 4216,
+        "period2": 2513,
+        "period3": 2091,
+        "currentPeriodStartTimestamp": 1771525993
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period3"
+        ],
+        "changeTimestamp": 1771528149
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15522197,
+      "slug": "carlos-alcaraz-karen-khachanov",
+      "startTimestamp": 1771518600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p500"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "5",
+      "tournament": {
+        "name": "Doha, Qatar",
+        "slug": "doha-qatar",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Doha",
+          "slug": "doha",
+          "primaryColorHex": "#0b542a",
+          "secondaryColorHex": "#cbdb2c",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3174,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2420,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوحة",
+              "hi": "दोहा",
+              "bn": "দোহা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 174950,
+        "endTimestamp": 1771632000,
+        "startTimestamp": 1771200000
+      },
+      "season": {
+        "name": "ATP Doha, Qatar Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80240
+      },
+      "roundInfo": {
+        "round": 28,
+        "name": "Semifinals",
+        "slug": "semifinals",
+        "cupRoundType": 2
+      },
+      "customId": "fKRsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Andrey Rublev",
+        "slug": "rublev-andrey",
+        "shortName": "A. Rublev",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 37435,
+        "playerTeamInfo": {
+          "id": 125
+        },
+        "nameCode": "RUB",
+        "ranking": 17,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "RU",
+          "alpha3": "RUS",
+          "name": "Russia",
+          "slug": "russia"
+        },
+        "id": 106755,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "أندريه روبليف",
+            "ru": "Рублёв, Андрей"
+          },
+          "shortNameTranslation": {
+            "ar": "أ. روبليف",
+            "bn": "এ. রুবলেভ",
+            "hi": "ए. रुबलेव"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 7,
+        "period2": 6,
+        "period1TieBreak": 7,
+        "point": "A",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 6,
+        "period2": 4,
+        "period1TieBreak": 3,
+        "point": "40",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 3794,
+        "period2": 3572,
+        "currentPeriodStartTimestamp": 1771609481
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1771613086
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15522207,
+      "slug": "carlos-alcaraz-andrey-rublev",
+      "startTimestamp": 1771605000,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p500"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 2,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Doha, Qatar",
+        "slug": "doha-qatar",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Doha",
+          "slug": "doha",
+          "primaryColorHex": "#0b542a",
+          "secondaryColorHex": "#cbdb2c",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 3174,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 500,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2420,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "الدوحة",
+              "hi": "दोहा",
+              "bn": "দোহা"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 174950,
+        "endTimestamp": 1771632000,
+        "startTimestamp": 1771200000
+      },
+      "season": {
+        "name": "ATP Doha, Qatar Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80240
+      },
+      "roundInfo": {
+        "round": 29,
+        "name": "Final",
+        "slug": "final",
+        "cupRoundType": 1
+      },
+      "customId": "ytkcsavKc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Arthur Fils",
+        "slug": "fils-arthur",
+        "shortName": "A. Fils",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 20267,
+        "playerTeamInfo": {
+          "id": 4829
+        },
+        "nameCode": "FIL",
+        "ranking": 32,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 338500,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "آرثر فيلس"
+          },
+          "shortNameTranslation": {
+            "ar": "آ. فيلس",
+            "bn": "এ. ফিলস",
+            "hi": "ए. फिल्स"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 1,
+        "point": "15",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 1661,
+        "period2": 1393,
+        "currentPeriodStartTimestamp": 1771699344
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1771700801
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15522221,
+      "slug": "arthur-fils-carlos-alcaraz",
+      "startTimestamp": 1771696800,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p500"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "tournament": {
+        "name": "Indian Wells, USA",
+        "slug": "indian-wells-usa",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Indian Wells",
+          "slug": "indian-wells",
+          "primaryColorHex": "#f3bd2a",
+          "secondaryColorHex": "#873968",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 7902,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2487,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة إنديان ويلز",
+              "hi": "इंडियन वेल्स",
+              "bn": "ইন্ডিয়ান ওয়েলস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 176052,
+        "endTimestamp": 1773532800,
+        "startTimestamp": 1772582400
+      },
+      "season": {
+        "name": "ATP Indian Wells, USA Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80797
+      },
+      "roundInfo": {
+        "round": 32,
+        "name": "Round of 64",
+        "slug": "round-of-64"
+      },
+      "customId": "Gwjsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Grigor Dimitrov",
+        "slug": "dimitrov-grigor",
+        "shortName": "G. Dimitrov",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 30444,
+        "playerTeamInfo": {
+          "id": 29
+        },
+        "nameCode": "DIM",
+        "ranking": 42,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "BG",
+          "alpha3": "BGR",
+          "name": "Bulgaria",
+          "slug": "bulgaria"
+        },
+        "id": 23581,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "غريغور ديميتروف",
+            "ru": "Димитров, Григор"
+          },
+          "shortNameTranslation": {
+            "ar": "غ. ديميتروف",
+            "bn": "জি. দিমিত্রভ",
+            "hi": "जी. दिमित्रोव"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 0,
+        "display": 0,
+        "period1": 2,
+        "period2": 3,
+        "point": "15",
+        "normaltime": 0
+      },
+      "time": {
+        "period1": 1924,
+        "period2": 2096,
+        "currentPeriodStartTimestamp": 1772931639
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart",
+          "time.period2"
+        ],
+        "changeTimestamp": 1772933785
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15624962,
+      "slug": "carlos-alcaraz-grigor-dimitrov",
+      "startTimestamp": 1772928600,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "firstToServe": 1,
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "26",
+      "tournament": {
+        "name": "Indian Wells, USA",
+        "slug": "indian-wells-usa",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Indian Wells",
+          "slug": "indian-wells",
+          "primaryColorHex": "#f3bd2a",
+          "secondaryColorHex": "#873968",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 7902,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2487,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة إنديان ويلز",
+              "hi": "इंडियन वेल्स",
+              "bn": "ইন্ডিয়ান ওয়েলস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 176052,
+        "endTimestamp": 1773532800,
+        "startTimestamp": 1772582400
+      },
+      "season": {
+        "name": "ATP Indian Wells, USA Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80797
+      },
+      "roundInfo": {
+        "round": 6,
+        "name": "Round of 32",
+        "slug": "round-of-32",
+        "cupRoundType": 16
+      },
+      "customId": "gxAsytkc",
+      "status": {
+        "code": 100,
+        "description": "Ended",
+        "type": "finished"
+      },
+      "winnerCode": 1,
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Arthur Rinderknech",
+        "slug": "rinderknech-arthur",
+        "shortName": "A. Rinderknech",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 8344,
+        "playerTeamInfo": {
+          "id": 626
+        },
+        "nameCode": "RIN",
+        "ranking": 28,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "FR",
+          "alpha3": "FRA",
+          "name": "France",
+          "slug": "france"
+        },
+        "id": 63606,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "آرثر ريندركنش",
+            "bn": "আর্থার রিন্ডারকনেচ",
+            "hi": "आर्थर रिंडरक्नेक",
+            "ru": "Риндеркнеч, Артур"
+          },
+          "shortNameTranslation": {
+            "ar": "آ. ريندركنش"
+          }
+        }
+      },
+      "homeScore": {
+        "current": 2,
+        "display": 2,
+        "period1": 6,
+        "period2": 6,
+        "period3": 6,
+        "period1TieBreak": 6,
+        "point": "40",
+        "normaltime": 2
+      },
+      "awayScore": {
+        "current": 1,
+        "display": 1,
+        "period1": 7,
+        "period2": 3,
+        "period3": 2,
+        "period1TieBreak": 8,
+        "point": "0",
+        "normaltime": 1
+      },
+      "time": {
+        "period1": 3833,
+        "period2": 2454,
+        "period3": 2021,
+        "currentPeriodStartTimestamp": 1773113496
+      },
+      "changes": {
+        "changes": [
+          "time.currentPeriodStart"
+        ],
+        "changeTimestamp": 1773115658
+      },
+      "hasGlobalHighlights": true,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15625004,
+      "slug": "carlos-alcaraz-arthur-rinderknech",
+      "startTimestamp": 1773107100,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    },
+    {
+      "homeTeamSeed": "1",
+      "awayTeamSeed": "13",
+      "tournament": {
+        "name": "Indian Wells, USA",
+        "slug": "indian-wells-usa",
+        "category": {
+          "name": "ATP",
+          "slug": "atp",
+          "sport": {
+            "name": "Tennis",
+            "slug": "tennis",
+            "id": 5
+          },
+          "country": {},
+          "id": 3,
+          "flag": "atp",
+          "fieldTranslations": {
+            "nameTranslation": {
+              "bn": "এটিপি",
+              "hi": "डब्ल्यूटीए",
+              "ar": "رابطة محترفي التنس",
+              "ru": "ATP"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "uniqueTournament": {
+          "name": "Indian Wells",
+          "slug": "indian-wells",
+          "primaryColorHex": "#f3bd2a",
+          "secondaryColorHex": "#873968",
+          "category": {
+            "name": "ATP",
+            "slug": "atp",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "country": {},
+            "id": 3,
+            "flag": "atp",
+            "fieldTranslations": {
+              "nameTranslation": {
+                "bn": "এটিপি",
+                "hi": "डब्ल्यूटीए",
+                "ar": "رابطة محترفي التنس",
+                "ru": "ATP"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "userCount": 7902,
+          "groundType": "Hardcourt outdoor",
+          "tennisPoints": 1000,
+          "hasPerformanceGraphFeature": false,
+          "country": {},
+          "id": 2487,
+          "hasEventPlayerStatistics": false,
+          "displayInverseHomeAwayTeams": false,
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "بطولة إنديان ويلز",
+              "hi": "इंडियन वेल्स",
+              "bn": "ইন্ডিয়ান ওয়েলস"
+            },
+            "shortNameTranslation": {}
+          }
+        },
+        "priority": 0,
+        "isGroup": false,
+        "id": 176052,
+        "endTimestamp": 1773532800,
+        "startTimestamp": 1772582400
+      },
+      "season": {
+        "name": "ATP Indian Wells, USA Men Singles 2026",
+        "year": "2026",
+        "editor": false,
+        "id": 80797
+      },
+      "roundInfo": {
+        "round": 5,
+        "name": "Round of 16",
+        "slug": "round-of-16",
+        "cupRoundType": 8
+      },
+      "customId": "YJXsytkc",
+      "status": {
+        "code": 0,
+        "description": "Not started",
+        "type": "notstarted"
+      },
+      "homeTeam": {
+        "name": "Carlos Alcaraz",
+        "slug": "alcaraz-carlos",
+        "shortName": "C. Alcaraz",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 243991,
+        "playerTeamInfo": {
+          "id": 3111
+        },
+        "nameCode": "ALC",
+        "ranking": 1,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "ES",
+          "alpha3": "ESP",
+          "name": "Spain",
+          "slug": "spain"
+        },
+        "id": 275923,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كارلوس ألكاراز",
+            "ru": "Алькарас Гарфия, Карлос"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. ألكاراز",
+            "bn": "সি আলকারাজ",
+            "hi": "सी. अल्काराज़"
+          }
+        }
+      },
+      "awayTeam": {
+        "name": "Casper Ruud",
+        "slug": "ruud-casper",
+        "shortName": "C. Ruud",
+        "gender": "M",
+        "sport": {
+          "name": "Tennis",
+          "slug": "tennis",
+          "id": 5
+        },
+        "userCount": 36908,
+        "playerTeamInfo": {
+          "id": 118
+        },
+        "nameCode": "RUU",
+        "ranking": 13,
+        "disabled": false,
+        "national": false,
+        "type": 1,
+        "country": {
+          "alpha2": "NO",
+          "alpha3": "NOR",
+          "name": "Norway",
+          "slug": "norway"
+        },
+        "id": 119248,
+        "subTeams": [],
+        "teamColors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        },
+        "fieldTranslations": {
+          "nameTranslation": {
+            "ar": "كاسبر رود",
+            "ru": "Рууд, Каспер"
+          },
+          "shortNameTranslation": {
+            "ar": "ك. رود",
+            "bn": "সি. রুদ",
+            "hi": "सी. रूड"
+          }
+        }
+      },
+      "homeScore": {},
+      "awayScore": {},
+      "time": {},
+      "changes": {
+        "changeTimestamp": 0
+      },
+      "hasGlobalHighlights": false,
+      "crowdsourcingDataDisplayEnabled": false,
+      "id": 15625024,
+      "slug": "carlos-alcaraz-casper-ruud",
+      "startTimestamp": 1773260400,
+      "periods": {
+        "point": "Game",
+        "current": "Match",
+        "period1": "1st set",
+        "period2": "2nd set",
+        "period3": "3rd set",
+        "period4": "4th set",
+        "period5": "5th set"
+      },
+      "finalResultOnly": false,
+      "feedLocked": false,
+      "groundType": "Hardcourt outdoor",
+      "isEditor": false,
+      "eventFilters": {
+        "category": [
+          "singles"
+        ],
+        "level": [
+          "pro"
+        ],
+        "tournament": [
+          "p1000"
+        ],
+        "gender": [
+          "M"
+        ]
+      }
+    }
+  ],
+  "hasNextPage": true
+}
